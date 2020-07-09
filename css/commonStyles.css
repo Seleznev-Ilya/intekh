@@ -1,0 +1,51 @@
+/*
+  320    -> 425  Mobile
+  425    -> 768 Table
+  768   -> ∞∞∞  PC
+*/
+
+/*STATIC*/
+@import "static/footer.css";
+@import "static/header.css";
+@import "static/menu.css";
+
+/*HOME*/
+@import "home/homeBackground.css";
+@import "home/homeStyle.css";
+
+/*ABOUT US*/
+
+/*OUR OFFICE*/
+
+/*VACANCIES*/
+
+/*CONTACTS*/
+
+/*COMMON*/
+@import "commonSlider.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*position: relative;*/
+    /*overflow: hidden;*/
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+}
+
+main {
+    position: relative;
+}
+
+@font-face {
+    font-family: bebas Neue;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../font/11585.ttf");
+}
+
+* {
+    font-family: "bebas Neue", serif;
+}

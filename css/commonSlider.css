@@ -1,0 +1,31 @@
+@import "commonStyles.css";
+.document{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(30, 30, 30, 0.95);
+}
+.document__inner{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    transform: translateX(0);
+    transition: .79s ease;
+}
+.document__item{
+    z-index: 1;
+    position: relative;
+    background-color: #999999;
+    box-shadow: inset 0 0 25px black;
+    padding: 19px;
+    width: 100vw;
+    height: 100vh;
+}
+@media (min-width: 768px) {
+    .aboutUs__showHome{
+        transform: translate(-40px);
+        transition: .1s ease-out;
+    }
+}
