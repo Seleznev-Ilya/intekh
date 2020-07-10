@@ -5,9 +5,10 @@
 */
 
 /*STATIC*/
-@import "static/footer.css";
 @import "static/header.css";
-@import "static/menu.css";
+@import "static/nav.css";
+@import "static/footer.css";
+@import "static/footerMobile.css";
 
 /*HOME*/
 @import "home/homeBackground.css";
@@ -29,14 +30,15 @@
 }
 
 body {
-    /*position: relative;*/
-    /*overflow: hidden;*/
-    /*height: 100vh;*/
-    /*width: 100vw;*/
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
 }
 
 main {
     position: relative;
+    grid-area: m;
 }
 
 @font-face {
