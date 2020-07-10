@@ -5,10 +5,12 @@
 */
 
 /*STATIC*/
-@import "static/footer.css";
 @import "static/header.css";
 @import "static/menu.css";
 @import "static/headerMedia.css";
+@import "static/nav.css";
+@import "static/footer.css";
+@import "static/footerMobile.css";
 
 /*HOME*/
 @import "home/homeBackground.css";
@@ -65,9 +67,9 @@
 
 body {
     position: relative;
-    /*overflow: hidden;*/
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+
 }
 
 main {

@@ -1,6 +1,6 @@
-@import "../commonStyles.css";
+@import "../COMMON.css";
 @media (max-width: 425px) {
-    .main__arrow{
+    .home-arrow{
         display: none;
     }
 }
