@@ -8,6 +8,7 @@
 @import "static/footer.css";
 @import "static/header.css";
 @import "static/menu.css";
+@import "static/headerMedia.css";
 
 /*HOME*/
 @import "home/homeBackground.css";
@@ -24,28 +25,51 @@
 /*COMMON*/
 @import "commonSlider.css";
 
-* {
+/*Basic options*/
+
+@font-face {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/11585.ttf");
+  }
+  
+  @font-face {
+    font-family: "Bebas NeueNormal";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/11819.ttf");
+  }
+  
+  * {
     box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: "Bebas Neue";
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:visited,
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /*END Basic options*/
 
 body {
-    /*position: relative;*/
+    position: relative;
     /*overflow: hidden;*/
-    /*height: 100vh;*/
-    /*width: 100vw;*/
+    width: 100%;
+    height: 100vh;
 }
 
 main {
     position: relative;
-}
-
-@font-face {
-    font-family: bebas Neue;
-    font-style: normal;
-    font-weight: 400;
-    src: url("../font/11585.ttf");
-}
-
-* {
-    font-family: "bebas Neue", serif;
 }
