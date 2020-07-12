@@ -30,9 +30,10 @@
     text-align: center;
     line-height: 48px;
     height: inherit;
+    color: rgba(255, 255, 255, 0.1);
 }
 
-.nav-footer__item p {
+.nav-footer__item {
     height: inherit;
     font-family: Bebas Neue;
     font-style: normal;
@@ -40,6 +41,7 @@
     font-size: 14px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    /*color: #FFFFFF;*/
-    color: rgba(255, 255, 255, 0.1);
+}
+.nav-footer__item.active{
+    color: #ffffff;
 }
