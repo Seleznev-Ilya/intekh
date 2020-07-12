@@ -1,6 +1,7 @@
 function appearAboutUsOnHome() {
     let aboutUs = document.querySelector('.aboutUs');
     return aboutUs.classList.toggle('aboutUs__showHome');
+//    сдвигать только H1 с описанием во второй странице****
 }
 
 appearAboutUsOnHome();
@@ -15,7 +16,13 @@ function sliderSwitcherPage(i) {
     let sliderSwitcher = document.querySelector('.document__inner');
     sliderSwitcher.style.transform = `translateX(-${i}vw)`;
 }
+let headerHome = document.querySelector('.header__home'),
+    headerAboutUs = document.querySelector('.header__aboutUs'),
+    headerVacancies = document.querySelector('.header__vacancies'),
+    headerContacts = document.querySelector('.header__contacts');
 
-
-
+headerHome.addEventListener("click", () => sliderSwitcherPage(0));
+headerAboutUs.addEventListener("click", () => sliderSwitcherPage(100));
+headerVacancies.addEventListener("click", () => sliderSwitcherPage(200));
+headerContacts.addEventListener("click", () => sliderSwitcherPage(300));
 

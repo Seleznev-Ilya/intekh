@@ -6,11 +6,10 @@
 
 /*STATIC*/
 @import "static/header.css";
-@import "static/menu.css";
-@import "static/headerMedia.css";
 @import "static/nav.css";
+@import "static/headerMedia.css";
+@import "static/nav-footerMobile.css";
 @import "static/footer.css";
-@import "static/footerMobile.css";
 
 /*HOME*/
 @import "home/homeBackground.css";
@@ -74,4 +73,7 @@ body {
 
 main {
     position: relative;
+}
+footer{
+    position: fixed;
 }

@@ -5,6 +5,6 @@
 /*Когда дан сделает контент на этой стр, нужно попробовать смещать не страницу, а только заголовок, на главную */
 @media (min-width: 768px) {
     .aboutUs__showHome{
-        transform: translate(-240px);
+        /*transform: translate(-240px);*/
     }
 }

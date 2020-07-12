@@ -3,10 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="26632f12-d8bc-4a21-91b5-5b8226faae16" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/COMMON.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/COMMON.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/commonSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/commonSlider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/about us/about us.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/about us/about us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/static/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/static/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/static/footerMobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/static/nav-footerMobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/static/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/static/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/static/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/static/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/static/nav.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scriptSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scriptSlider.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -69,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594182893265</updated>
       <workItem from="1594182896321" duration="43879000" />
-      <workItem from="1594377062914" duration="12751000" />
+      <workItem from="1594377062914" duration="24122000" />
     </task>
     <servers />
   </component>
@@ -77,6 +82,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="499" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594553082030">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864/-1280.52.1280.1024@0.0.1536.864" timestamp="1594553082030" />
     <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1594269703011">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
