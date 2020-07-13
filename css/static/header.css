@@ -1,15 +1,5 @@
 @import "../COMMON.css";
 
-            /******/
-
-/*Временно, до решения проблеммы -> header__button, header__search
- они скрыты при мобильной верстке, для работы с футером(мобильным)
- при взаимодейсвии с шириной документа*/
-.header__button, .header__search {
-  display: none;
-}
-            /******/
-
 .header {
     position: absolute;
     z-index: 1;
