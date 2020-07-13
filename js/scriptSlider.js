@@ -4,7 +4,8 @@ function appearAboutUsOnHome() {
 //    сдвигать только H1 с описанием во второй странице****
 }
 
-appearAboutUsOnHome();
+// appearAboutUsOnHome();
+
 /*Получать отступ на сейчас, по клику стрелочки увеличивая его по ширине экрана,
     так же добавить ивентЛисенер доя каждого нажатия, для мобил и веб версии одинаковые классы*/
 function sliderSwitcherPage(i) {
@@ -16,13 +17,40 @@ function sliderSwitcherPage(i) {
     let sliderSwitcher = document.querySelector('.document__inner');
     sliderSwitcher.style.transform = `translateX(-${i}vw)`;
 }
-let headerHome = document.querySelector('.header__home'),
-    headerAboutUs = document.querySelector('.header__aboutUs'),
-    headerVacancies = document.querySelector('.header__vacancies'),
-    headerContacts = document.querySelector('.header__contacts');
 
-headerHome.addEventListener("click", () => sliderSwitcherPage(0));
-headerAboutUs.addEventListener("click", () => sliderSwitcherPage(100));
-headerVacancies.addEventListener("click", () => sliderSwitcherPage(200));
-headerContacts.addEventListener("click", () => sliderSwitcherPage(300));
+//painting by active class in nav menu
+function stylingNavMenuActive(c, parent) {
+    let nav = document.querySelectorAll(`.${parent}`);
+    let navMenu = nav[0].children[0].children;
+    for (let key of navMenu) {
+        for (let key1 of key.classList) {
+            if (key1 === 'active') {
+                key.classList.remove("active");
+            }
+        }
+    }
+    c.classList.add('active');
+}
+
+function sliderSwitcherPageByArrow(n) {
+    function makeCounter() {
+
+        function counter() {
+            return counter.count++;
+        }
+
+        counter.count = n;
+
+        return counter;
+    }
+
+    let counter = makeCounter();
+
+    // counter.count = n;
+    return counter();
+}
+
+console.log(sliderSwitcherPageByArrow(2));
+console.log(sliderSwitcherPageByArrow(2));
+console.log(sliderSwitcherPageByArrow(2));
 

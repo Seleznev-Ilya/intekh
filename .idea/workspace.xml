@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="26632f12-d8bc-4a21-91b5-5b8226faae16" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/css/commonSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/commonSlider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/static/nav-footerMobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/static/nav-footerMobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/static/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/static/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/nav-footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/nav-footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scriptSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scriptSlider.js" afterDir="false" />
+>>>>>>> master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594182893265</updated>
       <workItem from="1594182896321" duration="43879000" />
-      <workItem from="1594377062914" duration="24122000" />
+      <workItem from="1594377062914" duration="35146000" />
     </task>
     <servers />
   </component>
