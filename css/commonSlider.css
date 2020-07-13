@@ -12,7 +12,7 @@
     flex-direction: row;
     height: 100vh;
     transform: translateX(0);
-    transition: .75s ease-in-out;
+    transition: .65s ease;
 }
 .document__item{
     z-index: 1;
