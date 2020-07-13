@@ -1,13 +1,13 @@
+/*сдвигать только H1 с описанием во второй странице
+* не весь блок о нас, попрвить стили и се, запустить функцию*/
 function appearAboutUsOnHome() {
     let aboutUs = document.querySelector('.aboutUs');
     return aboutUs.classList.toggle('aboutUs__showHome');
-//    сдвигать только H1 с описанием во второй странице****
 }
 
 // appearAboutUsOnHome();
 
-/*Получать отступ на сейчас, по клику стрелочки увеличивая его по ширине экрана,
-    так же добавить ивентЛисенер доя каждого нажатия, для мобил и веб версии одинаковые классы*/
+/*Get "i" like number and move pageSlider*/
 function sliderSwitcherPage(i) {
     if (i < 100 && appearAboutUsOnHome() === false) {
         appearAboutUsOnHome();
@@ -18,10 +18,11 @@ function sliderSwitcherPage(i) {
     sliderSwitcher.style.transform = `translateX(-${i}vw)`;
 }
 
-//painting active item by active class in nav menu
-function stylingNavMenuActive(c, parent) {
+/*Painting active item by active class in nav menu*/
+function stylingNavMenuActive(classNav, parent) {
     let nav = document.querySelectorAll(`.${parent}`);
     let navMenu = nav[0].children[0].children;
+
     for (let key of navMenu) {
         for (let key1 of key.classList) {
             if (key1 === 'active') {
@@ -29,21 +30,25 @@ function stylingNavMenuActive(c, parent) {
             }
         }
     }
-    c.classList.add('active');
+    classNav.classList.add('active');
 }
+
 /*Arrow interaction with nov, nav-footer*/
 function CounterPages() {
-    let count = 0;
+    this.count = 0;
     this.next = function () {
-        return ++count;
+        return ++this.count;
     };
     this.zero = function (n = -1) {
-        return count = n;
+        return this.count = n;
     };
 }
 
 let counter = new CounterPages();
 
+/*Check quantity of page in slider
+*if more then our 0,1,2,3 pages then make start from -1 (this.zero)
+* to make 0 by pre increment */
 function getNumberFromCounterPages() {
     let page = counter.next();
     if (page < 3) {
@@ -54,10 +59,9 @@ function getNumberFromCounterPages() {
     }
 }
 
-/*TEST*/
-function moveSliderPageByNumberFromCounterPages(){
+function moveSliderPageByNumberFromCounterPages() {
     let numberPage = getNumberFromCounterPages();
-    console.log(numberPage);
+
     switch (numberPage) {
         case 1:
             sliderSwitcherPage(100);
