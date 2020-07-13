@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="26632f12-d8bc-4a21-91b5-5b8226faae16" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/COMMON.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/COMMON.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/about us/about us.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/about us/about us.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/static/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/static/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/static/footerMobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/static/nav-footerMobile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/static/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/static/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/static/menu.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/static/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/static/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scriptSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scriptSlider.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
