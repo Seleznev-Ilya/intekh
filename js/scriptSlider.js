@@ -18,7 +18,7 @@ function sliderSwitcherPage(i) {
     sliderSwitcher.style.transform = `translateX(-${i}vw)`;
 }
 
-//painting by active class in nav menu
+//painting active item by active class in nav menu
 function stylingNavMenuActive(c, parent) {
     let nav = document.querySelectorAll(`.${parent}`);
     let navMenu = nav[0].children[0].children;
@@ -31,26 +31,58 @@ function stylingNavMenuActive(c, parent) {
     }
     c.classList.add('active');
 }
-
-function sliderSwitcherPageByArrow(n) {
-    function makeCounter() {
-
-        function counter() {
-            return counter.count++;
-        }
-
-        counter.count = n;
-
-        return counter;
-    }
-
-    let counter = makeCounter();
-
-    // counter.count = n;
-    return counter();
+/*Arrow interaction with nov, nav-footer*/
+function CounterPages() {
+    let count = 0;
+    this.next = function () {
+        return ++count;
+    };
+    this.zero = function (n = -1) {
+        return count = n;
+    };
 }
 
-console.log(sliderSwitcherPageByArrow(2));
-console.log(sliderSwitcherPageByArrow(2));
-console.log(sliderSwitcherPageByArrow(2));
+let counter = new CounterPages();
+
+function getNumberFromCounterPages() {
+    let page = counter.next();
+    if (page < 3) {
+        return page;
+    } else {
+        counter.zero();
+        return page;
+    }
+}
+
+/*TEST*/
+function moveSliderPageByNumberFromCounterPages(){
+    let numberPage = getNumberFromCounterPages();
+    console.log(numberPage);
+    switch (numberPage) {
+        case 1:
+            sliderSwitcherPage(100);
+            stylingNavMenuActive(headerAboutUsM, 'nav-footer__Mobile');
+            stylingNavMenuActive(headerAboutUs, 'nav');
+            break;
+        case 2:
+            sliderSwitcherPage(200);
+            stylingNavMenuActive(headerVacanciesM, 'nav-footer__Mobile');
+            stylingNavMenuActive(headerVacancies, 'nav');
+            break;
+        case 3:
+            sliderSwitcherPage(300);
+            stylingNavMenuActive(headerContactsM, 'nav-footer__Mobile');
+            stylingNavMenuActive(headerContacts, 'nav');
+            break;
+        default:
+            sliderSwitcherPage(0);
+            stylingNavMenuActive(headerHomeM, 'nav-footer__Mobile');
+            stylingNavMenuActive(headerHome, 'nav');
+    }
+}
+
+
+
+
+
 
