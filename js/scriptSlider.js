@@ -5,7 +5,7 @@ function appearAboutUsOnHome() {
     return aboutUs.classList.toggle('aboutUs__showHome');
 }
 
-// appearAboutUsOnHome();
+appearAboutUsOnHome();
 
 /*Get "i" like number and move pageSlider*/
 function sliderSwitcherPage(i) {

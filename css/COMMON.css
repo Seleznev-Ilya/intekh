@@ -68,11 +68,12 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-
+    min-width: 320px;
 }
 
 main {
     position: relative;
+    /*min-width: 320px;*/
 }
 footer{
     position: fixed;
