@@ -69,12 +69,19 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-
+    min-width: 320px;
 }
-
+header{
+    min-width: 320px;
+    /*overflow: hidden;*/
+}
 main {
     position: relative;
+    min-width: 320px;
+    /*overflow: hidden;*/
 }
 footer{
+    min-width: 320px;
     position: fixed;
+    /*overflow: hidden;*/
 }

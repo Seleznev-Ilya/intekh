@@ -1,3 +1,4 @@
+@import "../COMMON.css";
 @media (min-width: 768px) {
 }
 
@@ -5,48 +6,48 @@
 }
 
 @media (min-width: 375px) and (max-width: 480px) {
-  .header__button {
-    width: 138px;
-    margin-right: 25px;
-  }
+    .header__button {
+        width: 138px;
+        margin-right: 20px;
+    }
 
-  .header__search {
-    width: 48px;
-    height: 48px;
-    right: 175px;
-  }
+    .header__search {
+        width: 45px;
+        height: 45px;
+        right: 175px;
+    }
 
-  div.title h1 {
-    font-size: 32px;
-  }
+    div.title h1 {
+        font-size: 32px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 375px) {
 
-  .header__logo img {
-    width: 100%;
-  }
+    .header__logo img {
+        width: 100%;
+    }
 
-  .header__button {
-    width: 118px;
-    margin-right: 10px;
-}
+    .header__button {
+        width: 118px;
+        margin-right: 10px;
+    }
 
-  .header__button {
-    width: 110px;
-    font-size: 11px;
-    height: 48px;
-    line-height: 45px;
-  }
+    .header__button {
+        width: 110px;
+        font-size: 10.25px;;
+        height: 45px;
+        line-height: 45px;
+    }
 
-  .header__logo {
-    margin-left: 20px;
-  }
+    .header__logo {
+        margin-left: 20px;
+    }
 
-  .header__search {
-    width: 45px;
-    height: 45px;
-    right: 130px;
-    line-height: 55px;
-}
+    .header__search {
+        width: 45px;
+        height: 45px;
+        right: 130px;
+        line-height: 55px;
+    }
 }
