@@ -19,3 +19,4 @@ let aboutUsBtn = document.querySelector('.header__button.aboutUs'),
     showTwoBlocks = document.querySelector('.main__show'),
     toTopOurOffices = document.querySelector('.main__ourProjects');
 
+
