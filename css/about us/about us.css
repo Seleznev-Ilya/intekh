@@ -35,30 +35,6 @@
     line-height: 30px;
 }
 
-.main__ourOfficesActive {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 200px;
-    margin-left: 300px;
-    justify-content: center;
-}
-
-.main__ourOfficesActive h1 {
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "Arial";
-    font-weight: 800;
-    font-size: 47px;
-}
-
-.main__ourOfficesActive p {
-    color: rgba(255, 255, 255, 0.2);
-    font-size: 18px;
-    font-family: "Bebas NeueNormal";
-    line-height: 30px;
-}
-
 /* Slider */
 
 .main__sliderAboutUs {
@@ -79,6 +55,23 @@ button.slick-next.slick-arrow {
 
 .slick-list.draggable {
     padding: 0 250px 0 0!important;
+}
+
+.main__show {
+    display: none;
+    position: relative;
+    left: 650px;
+    width: 50%;
+    transition: left .2s;
+}
+
+.main__show img {
+    width: 305px;
+}
+
+.main__show img:first-child {
+    position: relative;
+    bottom: 85px;
 }
 
 /* END Slider */

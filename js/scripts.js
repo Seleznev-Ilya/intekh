@@ -14,5 +14,8 @@ let arrowButtonNext = document.querySelector('.footer__img'),
 
 let aboutUsBtn = document.querySelector('.header__button.aboutUs'),
     hiddenOurProjectsH1 = document.querySelector('.main__ourProjects h1'),
-    hiddenOurProjectsP = document.querySelector('.main__ourProjects p');
+    hiddenOurProjectsP = document.querySelector('.main__ourProjects p'),
+    hiddenSliderAboutUs = document.querySelector('.main__sliderAboutUs'),
+    showTwoBlocks = document.querySelector('.main__show'),
+    toTopOurOffices = document.querySelector('.main__ourProjects');
 
