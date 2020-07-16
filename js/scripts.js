@@ -12,4 +12,7 @@ let arrowButtonNext = document.querySelector('.footer__img'),
 
 /*ABOUT US*/
 
+let aboutUsBtn = document.querySelector('.header__button.aboutUs'),
+    hiddenOurProjectsH1 = document.querySelector('.main__ourProjects h1'),
+    hiddenOurProjectsP = document.querySelector('.main__ourProjects p');
 

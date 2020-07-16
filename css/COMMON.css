@@ -21,9 +21,9 @@
 /*OUR OFFICE*/
 
 /*VACANCIES*/
-
+@import "vacancies/vacancies.css";
 /*CONTACTS*/
-
+@import "contacts/contacts.css";
 /*COMMON*/
 @import "commonSlider.css";
 

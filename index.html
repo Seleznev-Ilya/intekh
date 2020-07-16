@@ -10,6 +10,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   </head>
   <body>
@@ -62,7 +63,20 @@
                   </div>
                 </div>
                 <div class="main__content">
-                  <!--  main content here-->
+                  <div class="main__title">
+                     <h1>
+                       Мы занимаемся <br />
+                       цифровой <br />
+                       трансформацией <br />
+                       бан
+                     </h1>
+                     <div class="main__sub">
+                       <h2>
+                         Мы — {диджитал-сердце} Россельхозбанка. <br />
+                         Мы занимаемся цифровой трансформацией банка с нуля.
+                       </h2>
+                     </div>
+                   </div>
                 </div>
               </div>
             </div>
@@ -86,13 +100,80 @@
                   </div>
                 </div>
                 <div class="main__content">
-                  <!--  main content here-->
+                  <div class="main__tvoContainers">
+                    <div class="main__ourProjects">
+                      <h1>Наши проекты</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae tempus pellentesque tellus dictum egestas non nec, dictum. Amet semper proin placerat in egestas odio praesent amet risus. Pellentesque augue lorem mi </p>
+                      <a href="#">
+                        <div class="header__button aboutUs">Наш офис</div>
+                      </a>
+                    </div>
+
+                    <div class="main__ourOfficesActive" style="display: none">
+                      <h1>наш офис</h1>
+                      <p>м. университет, пр. партизанский, д.3, офис 333</p>
+                      <a href="#">
+                        <div class="header__button aboutUs">Наши проекты</div>
+                      </a>
+                    </div>
+
+                      <div class="main__sliderAboutUs">
+                        <div class="main__img"><img src="images/jpg/MaskGroup.jpg" alt="" width="370" height="268"></div>
+                        <div class="main__img"><img src="images/jpg/MaskGroup.jpg" alt="" width="370" height="268"></div>
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="vacancies document__item">c</div>
-          <div class="contacts document__item">d</div>
+          <div class="vacancies document__item">
+            <div class="vacancies-container">
+               <div class="vacancies-wrapper">
+                 <div class="vacancies-img"></div>
+                 <div class="vacancies-filter"></div>
+                 <div class="vacancies-arrow">
+                   <div class="vacancies-arrow__inside">
+                     <div class="vacancies-arrow__cubL"></div>
+                     <div class="vacancies-arrow__leg">
+                       <div class="vacancies-arrow__leg1">
+                         <div class="vacancies-arrow__leg2"></div>
+                       </div>
+                     </div>
+                     <div class="vacancies-arrow__cubR"></div>
+                     <div class="vacancies-arrow__inside1"></div>
+                     <div class="vacancies-arrow__inside2"></div>
+                   </div>
+                 </div>
+                 <div class="main__content">
+                   <!--  main content here-->
+                 </div>
+               </div>
+             </div>
+          </div>
+          <div class="contacts document__item">
+            <div class="contacts-container">
+               <div class="contacts-wrapper">
+                 <div class="contacts-img"></div>
+                 <div class="contacts-filter"></div>
+                 <div class="contacts-arrow">
+                   <div class="contacts-arrow__inside">
+                     <div class="contacts-arrow__cubL"></div>
+                     <div class="contacts-arrow__leg">
+                       <div class="contacts-arrow__leg1">
+                         <div class="contacts-arrow__leg2"></div>
+                       </div>
+                     </div>
+                     <div class="contacts-arrow__cubR"></div>
+                     <div class="contacts-arrow__inside1"></div>
+                     <div class="contacts-arrow__inside2"></div>
+                   </div>
+                 </div>
+                 <div class="main__content">
+                   <!--  main content here-->
+                 </div>
+               </div>
+             </div>
+          </div>
         </div>
       </div>
     </main>
@@ -118,5 +199,35 @@
     <script src="js/scriptSlider.js"></script>
     <script src="js/nav-footer.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/aboutUs.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>  
+    $('.main__sliderAboutUs').slick({
+        centerMode: true,
+        slidesToShow: 1,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+    });    
+    </script>
   </body>
 </html>
