@@ -62,9 +62,8 @@ button.slick-next.slick-arrow {
 }
 
 .main__show {
-    display: none;
     position: relative;
-    left: 650px;
+    /*left: 650px;*/
     width: 50%;
     transition: left .2s;
 }
@@ -79,7 +78,14 @@ button.slick-next.slick-arrow {
 }
 
 /* END Slider */
+/*hide script*/
 
+.hide{
+    display: none!important;
+}
+.main__show-hide{
+    display: none;
+}
 /*Когда дан сделает контент на этой стр, нужно попробовать смещать не страницу, а только заголовок H1, на главную */
 @media (min-width: 768px) {
     .aboutUs__showHome{
