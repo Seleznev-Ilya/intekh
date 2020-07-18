@@ -4,8 +4,8 @@ window.onresize = function () {
         clearTimeout(time);
     time = setTimeout(function () {
         if (documentWidth !== document.documentElement.clientWidth) {
-            h1Text();
-            // location.reload();
+            // h1Text();
+            location.reload();
         }
     }, 123);
 };
