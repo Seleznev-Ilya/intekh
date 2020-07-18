@@ -11,12 +11,8 @@ let arrowButtonNext = document.querySelector('.footer__img'),
     navFooterInner = document.querySelector('.nav-footer__inner');
 
 /*ABOUT US*/
-<<<<<<< HEAD
 
 let aboutUsBtn = document.querySelector('.white__button.aboutUs'),
-=======
-let aboutUsBtn = document.querySelector('.header__button.aboutUs'),
->>>>>>> eed09e84f32c9571daf178f19ce73cb7ba2a0b45
     hiddenOurProjectsH1 = document.querySelector('.main__ourProjects h1'),
     hiddenOurProjectsH2 = document.querySelector('.main__ourProjects h2'),
     hiddenOurProjectsP = document.querySelector('.main__ourProjects p'),
