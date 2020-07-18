@@ -1,0 +1,107 @@
+@import "../COMMON.css";
+.aboutUs{
+    transition: .7s ease;
+    overflow: hidden;
+}
+
+
+/* Styles for main content */
+.main__tvoContainers {
+    position: relative;
+    display: flex;
+    z-index: 1;
+}
+
+.main__ourProjects {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 300px;
+    justify-content: center;
+}
+
+.main__ourProjects h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Arial";
+    font-weight: 800;
+    font-size: 47px;
+}
+
+.main__ourProjects h2 {
+    color: #969696;
+}
+
+.main__ourProjects p {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    font-family: "Bebas NeueNormal";
+    line-height: 30px;
+}
+
+.main__ourProjects a {
+    width: 100px;
+}
+
+/* Slider */
+
+.main__sliderAboutUs {
+    width: 50%;
+    display: flex;
+    margin-top: 240px;
+    height: 320px;
+}
+
+.main__img img {
+    max-width: 100%;
+    height: auto;
+}
+
+button.slick-prev.slick-arrow {
+    position: absolute;
+    bottom: 0;
+}
+
+button.slick-next.slick-arrow {
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+}
+
+.slick-list.draggable {
+    padding: 0 250px 0 0!important;
+}
+
+.main__show {
+    position: absolute;
+    right: 0;
+    transition: left .2s;
+}
+
+.main__show img {
+    width: 100%;
+    max-width: 305px;
+    object-fit: cover;
+    height: 100vh;
+}
+.main__show img:first-child {
+    position: relative;
+    bottom: 85px;
+}
+
+/* END Slider */
+/*hide script*/
+
+.hide{
+    display: none!important;
+}
+.main__show-hide{
+    display: none;
+}
+/*Когда дан сделает контент на этой стр, нужно попробовать смещать не страницу, а только заголовок H1, на главную */
+@media (min-width: 768px) {
+    .aboutUs__showHome{
+        /*transform: translate(-240px);*/
+    }
+}

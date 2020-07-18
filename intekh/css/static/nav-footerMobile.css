@@ -1,0 +1,51 @@
+@import "../COMMON.css";
+
+@media (min-width: 480px) {
+    footer .nav-footer__Mobile {
+        display: none;
+    }
+}
+
+.nav-footer__Mobile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 63px;
+}
+
+.nav-footer__inner {
+    height: inherit;
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    position: fixed;
+    left: 0;
+    transition: 1s;
+}
+
+.nav-footer__item {
+    height: inherit;
+    width: 28.8vw;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 48px;
+    height: inherit;
+    transform: translateY(-1px);
+    border-top: 1px solid transparent;
+    color: rgba(255, 255, 255, 0.1);
+}
+.nav-footer__item:first-child{
+    border-top: 1px solid #eeeeee6b;
+}
+
+.nav-footer__item {
+    height: inherit;
+    font-family: Bebas Neue, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+.nav-footer__item.active{
+    color: #ffffff;
+}
