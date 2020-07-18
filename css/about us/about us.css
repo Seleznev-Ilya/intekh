@@ -1,6 +1,7 @@
 @import "../COMMON.css";
 .aboutUs{
     transition: .7s ease;
+    overflow: hidden;
 }
 
 
