@@ -36,6 +36,10 @@
     line-height: 30px;
 }
 
+.main__ourProjects a {
+    width: 100px;
+}
+
 /* Slider */
 
 .main__sliderAboutUs {
