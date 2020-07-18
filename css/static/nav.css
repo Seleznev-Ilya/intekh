@@ -40,7 +40,7 @@ li.location img {
     color: #ffffff;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 479px) {
     header .nav {
         display: none;
     }

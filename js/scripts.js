@@ -12,12 +12,12 @@ let arrowButtonNext = document.querySelector('.footer__img'),
 
 /*ABOUT US*/
 
-let aboutUsBtn = document.querySelector('.header__button.aboutUs'),
+let aboutUsBtn = document.querySelector('.white__button.aboutUs'),
     hiddenOurProjectsH1 = document.querySelector('.main__ourProjects h1'),
+    hiddenOurProjectsH2 = document.querySelector('.main__ourProjects h2'),
     hiddenOurProjectsP = document.querySelector('.main__ourProjects p'),
     hiddenSliderAboutUs = document.querySelector('.main__sliderAboutUs'),
     showTwoBlocks = document.querySelector('.main__show'),
     toTopOurOffices = document.querySelector('.main__ourProjects');
-    sdsds;
 
 

@@ -58,10 +58,12 @@ function changeFirstBlock() {
         if (aboutUsBtn.innerText === "Наш офис") {
             aboutUsBtn.innerText = "Наши проекты";
             hiddenOurProjectsH1.innerText = 'наш офис';
+            hiddenOurProjectsH2.innerText = 'Москва';
             hiddenOurProjectsP.innerText = 'м. университет, пр. партизанский, д.3, офис 333';
         } else if (aboutUsBtn.innerText === "Наши проекты") {
             aboutUsBtn.innerText = "Наш офис";
             hiddenOurProjectsH1.innerText = 'Наши проекты';
+            hiddenOurProjectsH2.innerText = '';
             hiddenOurProjectsP.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae tempus pellentesque tellus dictum egestas non nec, dictum. Amet semper proin placerat in egestas odio praesent amet risus. Pellentesque augue lorem mi';
         }
 }

@@ -6,7 +6,7 @@
 }
 
 @media (min-width: 375px) and (max-width: 480px) {
-    .header__button {
+    .white__button {
         width: 138px;
         margin-right: 20px;
     }
@@ -28,12 +28,12 @@
         width: 100%;
     }
 
-    .header__button {
+    .white__button {
         width: 118px;
         margin-right: 10px;
     }
 
-    .header__button {
+    .white__button {
         width: 110px;
         font-size: 10.25px;;
         height: 45px;

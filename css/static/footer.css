@@ -23,7 +23,7 @@
     margin-right: 50px;
     cursor: pointer;
 }
-@media (max-width: 425px) {
+@media (max-width: 479px) {
     footer .footer {
         display: none;
     }

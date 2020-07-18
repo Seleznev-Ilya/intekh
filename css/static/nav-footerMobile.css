@@ -1,6 +1,6 @@
 @import "../COMMON.css";
 
-@media (min-width: 426px) {
+@media (min-width: 480px) {
     footer .nav-footer__Mobile {
         display: none;
     }
