@@ -1,6 +1,92 @@
 @import "../COMMON.css";
 
+/*dsdsdcscdc*/
 
+.header__search-container {
+    position: relative;
+}
+
+.header__search {
+    position: absolute;
+    right: 235px;
+    top: 32px;
+    cursor: pointer;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #ffffff;
+    background-color: white;
+    border-radius: 100px;
+    overflow: hidden;
+    transition: .4s ease-out;
+    z-index: 5;
+}
+
+.header__search-suggest {
+    position: absolute;
+    right: 235px;
+    top: 81px;
+    width: 55%;
+    height: fit-content;
+    min-height: 85px;
+    border-radius: 20px;
+    background-color: white;
+    transform: translateY(-49px);
+    display: none;
+    opacity: 0;
+    transition: .3s ease-out;
+}
+
+.header__search-input {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    font-size: 18px;
+    transition: .1s ease-in;
+    padding-left: 21px;
+    padding-top: 11px;
+}
+
+.header__button-search {
+    text-align: center;
+    line-height: 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    width: 43px;
+    height: 43px;
+    border-radius: 100px;
+    transition: .2s ease-out;
+}
+
+.header__search-img {
+    margin-top: 10px;
+}
+
+.header__search-p {
+    color: white;
+    font-size: 14px;
+}
+
+.header__hidden {
+    display: none;
+}
+
+.header__active-headerSearch {
+    width: 55%;
+}
+
+.header__active-headerButtonSearch {
+    width: 17%;
+}
+
+
+/*dsdsdcscdc*/
 .header {
     position: absolute;
     z-index: 1;
@@ -15,20 +101,21 @@
     margin-top: 35px;
 }
 
-.header__search {
-    position: absolute;
-    text-align: center;
-    line-height: 55px;
-    right: 235px;
-    width: 45px;
-    height: 45px;
-    top: 32px;
-    border: 1px solid #ffffff;
-    box-sizing: border-box;
-    border-radius: 100px;
-}
+/*.header__search {*/
+/*    position: absolute;*/
+/*    text-align: center;*/
+/*    line-height: 55px;*/
+/*    right: 235px;*/
+/*    !*width: 45px;*!*/
+/*    height: 45px;*/
+/*    top: 32px;*/
+/*    border: 1px solid #ffffff;*/
+/*    box-sizing: border-box;*/
+/*    border-radius: 100px;*/
+/*}*/
 
 .white__button {
+    cursor: pointer;
     width: 170px;
     height: 45px;
     text-align: center;
