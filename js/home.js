@@ -5,7 +5,7 @@ window.onresize = function () {
     time = setTimeout(function () {
         if (documentWidth !== document.documentElement.clientWidth) {
             // h1Text();
-            // location.reload();
+            location.reload();
         }
     }, 123);
 };
@@ -78,7 +78,7 @@ function h1Text() {
             }, 3800);
         }, 2100);
         goal2.innerHTML = homeMainH2;
-        setTimeout(()=> goal2.style.opacity = '1',2700);
+        setTimeout(()=> goal2.style.opacity = '1',3800);
 
     }
 }
