@@ -1,4 +1,5 @@
 @import "../COMMON.css";
+
 @media (min-width: 768px) {
 }
 
@@ -17,8 +18,20 @@
         right: 175px;
     }
 
+    .header__search-suggest {
+        right: 175px;
+    }
+
     div.title h1 {
         font-size: 32px;
+    }
+
+    .header__active-headerButtonSearch {
+        width: 45px;
+    }
+    .header__search-p {
+
+        font-size: 11.25px;
     }
 }
 
@@ -44,10 +57,22 @@
         margin-left: 20px;
     }
 
+    .header__active-headerButtonSearch {
+        width: 42px;
+    }
+
+    .header__search-suggest {
+        right: 130px;
+    }
+
     .header__search {
-        width: 45px;
+        /*width: 45px;*/
         height: 45px;
         right: 130px;
-        line-height: 55px;
+        /*right: 20%;*/
+        /*line-height: 55px;*/
+    }
+    .header__search-p {
+        font-size: 10.25px;
     }
 }

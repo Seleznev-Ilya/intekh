@@ -9,6 +9,7 @@
 .header__search {
     position: absolute;
     right: 235px;
+    /*right: 20%;*/
     top: 32px;
     cursor: pointer;
     text-align: center;
@@ -71,6 +72,7 @@
 .header__search-p {
     color: white;
     font-size: 14px;
+
 }
 
 .header__hidden {
