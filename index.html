@@ -19,12 +19,25 @@
         <div class="header__logo">
           <img alt="logo" src="images/Logo_white.svg" />
         </div>
-        <div class="header__search">
-          <img alt="search" src="images/Search.svg" />
+<!--        <div class="header__item">-->
+<!--          <div class="header__search">-->
+<!--            <img alt="search" src="images/Search.svg" />-->
+<!--          </div>-->
+        <div class = "header__search">
+          <div class = "header__search-container">
+            <input class = "header__search-input header__hidden" type = "text">
+            <div class = "header__button-search">
+              <img alt = "search" class = "header__search-img " src = "images/Search.svg"/>
+              <p class = "header__search-p header__hidden ">найти</p>
+            </div>
+          </div>
         </div>
-        <a href="">
+        <div class="header__search-suggest"></div>
+<!--        </div>-->
+
+<!--        <a href="">-->
           <div class="white__button">Отправить резюме</div>
-        </a>
+<!--        </a>-->
       </div>
       <nav>
         <div class="nav">
@@ -190,6 +203,7 @@
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/scriptSlider.js"></script>
+    <script src="js/homeHeaderSearch.js"></script>
     <script src="js/nav-footer.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/home.js"></script>

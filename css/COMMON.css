@@ -74,15 +74,12 @@ body {
 }
 header{
     min-width: 320px;
-    /*overflow: hidden;*/
 }
 main {
     position: relative;
     min-width: 320px;
-    /*overflow: hidden;*/
 }
 footer{
     min-width: 320px;
     position: fixed;
-    /*overflow: hidden;*/
 }
