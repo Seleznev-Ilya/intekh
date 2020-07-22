@@ -112,11 +112,12 @@
 }
 
 .home-arrow__inside2 {
-    position: absolute;
-    top: 77%;
-    left: -25%;
-    background-color: rgba(163, 170, 174, 0.2);
-    width: 100vw;
-    height: 1px;
+    /*position: absolute;*/
+    /*top: 77%;*/
+    /*left: -25%;*/
+    /*background-color: rgba(163, 170, 174, 0.2);*/
+    /*width: 100vw;*/
+    /*height: 1px;*/
+    display: none;
 }
 

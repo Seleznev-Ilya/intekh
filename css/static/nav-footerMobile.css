@@ -21,6 +21,7 @@
     position: fixed;
     left: 0;
     transition: 1s;
+    background-color: rgba(33, 33, 33, 0.97);
 }
 
 .nav-footer__item {
