@@ -1,121 +1,231 @@
 @import "../COMMON.css";
+.vacancies{
+    overflow-y: scroll;
 
-/*BACKGROUND*/
-.vacancies-container {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
-
-.vacancies-wrapper {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
+.vacancies::-webkit-scrollbar {
+    width: 0;
+    height: 0
 }
-
-.vacancies-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: grey;
-    background-size: auto;
-    z-index: 1;
-}
-
-.vacancies-filter {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+.vacancies__content{
     background-color: rgba(33, 33, 33, .96);
-    z-index: 1;
-}
-
-/*ARROW*/
-.home-arrow {
     position: absolute;
-    top: 0;
-    left: 25%;
-    height: 100vh;
-    width: 1px;
-    background-color: rgba(163, 170, 174, 0.2);
-    z-index: 1;
-}
-
-/*ARROW inside*/
-.home-arrow__inside {
-    position: relative;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 100vw;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 12%;
+
+
+}
+.content__v-slots{
+    order: 1;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content__v-text{
+    order: 2;
+    width: 40%;
+    /*width: 480px;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.slots__items{
+    border-top: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.07);
+    border-right: 1px solid rgba(255, 255, 255, 0.07);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.2);
+    font-family: Bebas Neue, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1.4px;
+    width: 33.3%;
+    height: 328px;
+    background-color: rgba(33, 33, 33, .96);
+}
+.slots__items:hover{
+    background-color: white;
+    color: rgba(28, 28, 28, 0.7);
+}
+.slots__items:hover .slotsDivFlexDesc{
+    color: black;
 }
 
-.home-arrow__leg {
-    position: absolute;
-    /*top: 300px;*/
-    top: 37%;
-    left: 30%;
-    height: 1px;
-    width: 1px;
+.slots__items:hover .slotsDivFlexArrow{
+    display: none;
 }
-
-.home-arrow__leg1 {
+.slots__items:hover .slotsDivFlexArrowB{
+    display: block!important;
+}
+.slots__items-nohover:hover{
+    background-color: rgba(33, 33, 33, .96);
+}
+.text__item{
+    width: 100%;
+    height: 328px;
+    background-color: rgba(33, 33, 33, .96);
+    border-left: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    border-left: 1px solid rgba(255, 255, 255, 0.07);
     position: relative;
-    transform: rotate(-45deg);
+}
+.text__item-transparent{
+    background-color: transparent;
+}
+.text__item h2{
+    margin: 52% 0 0 8% ;
+    font-family: Arial, serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 100px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.text__item .text__wrapper{
+    margin:  6% 0 0 7.5%;
+    width: 340px;
+    height: 120px;
+}
+.text__wrapper p{
+    font-family: Bebas Neue, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: .83em;
+    line-height: 30px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.2);
+}
+.slotsDivFlexArrow{
+    text-align: center;
+}
+@media (min-width: 1275px) {
+    .text__item h2{
+        margin: 231px 0 0 35px ;
+        line-height: 100px;
+
+    }
+    .text__item .text__wrapper{
+        margin:  6% 0 0 7%;
+        width: 85%;
+        height: 120px;
+    }
+    .text__item .text__wrapper{
+        margin:  6% 0 0 7%;
+        width: 360px;
+    }
+}
+@media (max-width: 1100px) {
+    .vacancies__content{
+        /*flex-direction: column;*/
+        padding-left: 14%;
+    }
+    .text__item h2{
+        margin: 64% 0 0 12% ;
+        font-size: 45px;
+        line-height: 100px;
+
+    }
+    .text__item .text__wrapper{
+        margin:  6% 0 0 7%;
+        width: 85%;
+        height: 120px;
+    }
+    .text__wrapper p{
+        font-size: .8em;
+
+    }
+}
+@media  (max-width: 990px) {
+    .text__item-transparent{
+        display: none;
+    }
+    .vacancies__content{
+        flex-direction: column;
+        padding-left: 20%;
+    }
+    .content__v-slots{
+        order: 2;
+        width: 100%;
+    }
+    .content__v-text{
+        order: 1;
+        width: 100%;
+    }
+    .text__item{
+        height: 217px;
+    }
+    .text__item h2{
+        margin: 110px 0 0 3%;
+    }
+    .text__item .text__wrapper{
+      display: none;
+    }
+    .slots__items{
+        width: 50%;
+        height: 308px;
+    }
+}
+@media  (max-width: 900px) {
+    .slots__items{
+        padding: 25px;
+    }
+    .vacancies__content{
+        flex-direction: column;
+        padding-left: 25%;
+        padding-bottom: 90px;
+    }
+}
+@media  (max-width:  479px) {
+    .vacancies__content{
+        padding-left: 0;
+    }
+}
+.slotsContentP{
+    margin-top: 50px;
+    margin-bottom: 21px ;
+}
+.slotsDivFlexDesc{
+    color: #FFFFFF;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 5px;
 }
 
-.home-arrow__leg2 {
-    background-color: rgba(163, 170, 174, 0.2);
-    height: 1px;
-    width: 39.5vw;
+.slotsContentDivFlex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 155px;
 }
-
-.home-arrow__cubL {
-    position: absolute;
-    top: 0;
-    left: 30%;
-    background-color: rgba(163, 170, 174, 0.2);
-    /*height: 300px;*/
-    height: 37%;
-    width: 1px;
+@media  (max-width: 900px) {
+    .slotsContentDivFlex{
+        margin-bottom: 113px;
+    }
+    .slotsContentP{
+        margin-top: 24px;
+        margin-bottom: 21px ;
+    }
+    .slotsContentDivFlex{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .slotsDivFlexDesc{
+        margin-bottom:25px ;
+    }
 }
-
-.home-arrow__cubR {
-    position: absolute;
-    top: 0;
-    left: 57.7%;
-    background-color: rgba(163, 170, 174, 0.2);
-    /*height: 300px;*/
-    height: 37%;
-    width: 1px;
-}
-
-.home-arrow__inside1 {
-    position: absolute;
-    /*top: 300px;*/
-    top: 37%;
-    left: -25%;
-    background-color: rgba(163, 170, 174, 0.2);
-    width: 100vw;
-    height: 1px;
-}
-
-.home-arrow__inside2 {
-    position: absolute;
-    top: 77%;
-    left: -25%;
-    background-color: rgba(163, 170, 174, 0.2);
-    width: 100vw;
-    height: 1px;
-}
-
