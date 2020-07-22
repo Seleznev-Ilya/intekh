@@ -17,8 +17,6 @@
     display: flex;
     flex-direction: row;
     padding-left: 12%;
-
-
 }
 .content__v-slots{
     order: 1;
