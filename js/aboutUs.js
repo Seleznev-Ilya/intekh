@@ -1,71 +1,23 @@
-// const changeFirstBlock = () => {
-//     aboutUsBtn.onclick = (event) => {
-//         if (aboutUsBtn.innerText === "Наш офис") {
-//             event.target.innerText = "Наши проекты";
-//             hiddenOurProjectsH1.innerText = 'наш офис';
-//             hiddenOurProjectsP.innerText = 'м. университет, пр. партизанский, д.3, офис 333';
-//         } else if (aboutUsBtn.innerText === "Наши проекты") {
-//             event.target.innerText = "Наш офис";
-//             hiddenOurProjectsH1.innerText = 'Наши проекты';
-//             hiddenOurProjectsP.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae tempus pellentesque tellus dictum egestas non nec, dictum. Amet semper proin placerat in egestas odio praesent amet risus. Pellentesque augue lorem mi';
-//         }
-//
-//         // aboutUsBtn.classList.add('hidden');
-//         // if(event.target.classList.contains("hidden")) {
-//         // aboutUsBtn.classList.add('active');
-//         // aboutUsBtn.classList.remove('hidden');
-//         //     hiddenSliderAboutUs.style.display = 'none';
-//         //     showTwoBlocks.style.display = 'block';
-//         //     toTopOurOffices.style.marginTop = "10px";
-//         //     showTwoBlocks.style.left = '0';
-//         // } else if (event.target.classList.contains("active")) {
-//         //     a.classList.add('hidden');
-//         //     aboutUsBtn.classList.remove('active');
-//         //     showTwoBlocks.style.display = 'none';
-//         //     toTopOurOffices.style.marginTop = "200px";
-//         //     console.log('good')
-//         // }
-//     }
-// };
-//
-// changeFirstBlock();
-//
-// const changeSecondBlock = () => {
-//
-//
-//     aboutUsBtn.onclick = (event) => {
-//         // aboutUsBtn.classList.add('hidden');
-//         if (event.target.classList.contains("hidden")) {
-//             aboutUsBtn.classList.add('active');
-//             aboutUsBtn.classList.remove('hidden');
-//             hiddenSliderAboutUs.style.display = 'none';
-//             showTwoBlocks.style.display = 'block';
-//             toTopOurOffices.style.marginTop = "10px";
-//             showTwoBlocks.style.left = '0';
-//             console.log('ПИЗДА');
-//
-//         } else if (event.target.classList.contains("active")) {
-//             console.log('ХУЙ я второй IF');
-//             aboutUsBtn.classList.add('hidden');
-//             aboutUsBtn.classList.remove('active');
-//             showTwoBlocks.style.display = 'none';
-//             toTopOurOffices.style.marginTop = "200px";
-//         }
-//     }
-// };
-// setTimeout(changeSecondBlock, 2000);
 function changeFirstBlock() {
-        if (aboutUsBtn.innerText === "Наш офис") {
-            aboutUsBtn.innerText = "Наши проекты";
-            hiddenOurProjectsH1.innerText = 'наш офис';
-            hiddenOurProjectsH2.innerText = 'Москва';
-            hiddenOurProjectsP.innerText = 'м. университет, пр. партизанский, д.3, офис 333';
-        } else if (aboutUsBtn.innerText === "Наши проекты") {
-            aboutUsBtn.innerText = "Наш офис";
-            hiddenOurProjectsH1.innerText = 'Наши проекты';
-            hiddenOurProjectsH2.innerText = '';
-            hiddenOurProjectsP.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae tempus pellentesque tellus dictum egestas non nec, dictum. Amet semper proin placerat in egestas odio praesent amet risus. Pellentesque augue lorem mi';
+    if (aboutUsBtn.innerText === "Наш офис") {
+        aboutUsBtn.innerText = "Наши проекты";
+        hiddenOurProjectsH1.innerText = 'наш офис';
+        hiddenOurProjectsH2.innerText = 'Москва';
+        hiddenOurProjectsP.innerText = 'м. университет, пр. партизанский, д.3, офис 333';
+        if (width <= 768) {
+            mainOurProjects.style.width = '50%';
+            mainTvoContainers.style.flexDirection = 'row';
         }
+    } else if (aboutUsBtn.innerText === "Наши проекты") {
+        aboutUsBtn.innerText = "Наш офис";
+        hiddenOurProjectsH1.innerText = 'Наши проекты';
+        hiddenOurProjectsH2.innerText = '';
+        hiddenOurProjectsP.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae tempus pellentesque tellus dictum egestas non nec, dictum. Amet semper proin placerat in egestas odio praesent amet risus. Pellentesque augue lorem mi';
+        if (width <= 768) {
+            mainOurProjects.style.width = 'auto';
+            mainTvoContainers.style.flexDirection = 'column';
+        }
+    }
 }
 
 function hideSliderAboutUs() {
@@ -77,3 +29,81 @@ aboutUsBtn.addEventListener('click', () => {
     hideSliderAboutUs();
     changeFirstBlock();
 });
+
+
+/* Slider */
+
+document.getElementById('slider-right').onclick = sliderRight;
+document.getElementById('slider-left').onclick = sliderLeft;
+let polosa = document.getElementById('line');
+let left = 0;
+let width = screen.width;
+
+function sliderRight() {
+    if (width > 1200) {
+        left = left - 420;
+        if (left < -2520) {
+            left = 0;
+        }
+        polosa.style.left = left + 'px';
+    } else if (width > 992 && width <= 1200) {
+        left = left - 420;
+        if (left < -2520) {
+            left = 0;
+        }
+        polosa.style.left = left + 'px';
+    } else if (width > 768 && width <= 992) {
+        left = left - 300;
+        if (left < -1800) {
+            left = 0;
+        }
+        polosa.style.left = left + 'px';
+    } else if (width > 480 && width <= 768) {
+        left = left - 350;
+        if (left < -2100) {
+            left = 0;
+        }
+        polosa.style.left = left + 'px';
+    } else if (width >= 320 && width <= 480) {
+        left = left - 270;
+        if (left < -1620) {
+            left = 0;
+        }
+        polosa.style.left = left + 'px';
+    } else console.log('no!');
+}
+
+function sliderLeft() {
+
+    if (width > 1200) {
+        left += 420;
+        if (left > 0) {
+            left = -1 * (420 * 6);
+        }
+        polosa.style.left = left + 'px';
+    } else if (width > 992 && width <= 1200) {
+        left += 420;
+        if (left > 0) {
+            left = -1 * (420 * 6);
+        }
+        polosa.style.left = left + 'px';
+    } else if (width > 768 && width <= 992) {
+        left += 300;
+        if (left > 0) {
+            left = -1 * (300 * 6);
+        }
+        polosa.style.left = left + 'px';
+    }  else if (width > 480 && width <= 768) {
+        left += 350;
+        if (left > 0) {
+            left = -1 * (350 * 6);
+        }
+        polosa.style.left = left + 'px';
+    } else if (width >= 320 && width <= 480) {
+        left += 270;
+        if (left > 0) {
+            left = -1 * (270 * 6);
+        }
+        polosa.style.left = left + 'px';
+    } else console.log('no!');
+}
