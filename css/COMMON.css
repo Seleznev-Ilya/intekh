@@ -25,6 +25,7 @@
 @import "vacancies/vacancies.css";
 /*CONTACTS*/
 @import "contacts/contacts.css";
+@import "contacts/contactsMedia.css";
 /*COMMON*/
 @import "commonSlider.css";
 
