@@ -1,0 +1,97 @@
+/*медиа запросы*/
+
+@media screen and (max-width: 1200px) {
+  .contact__map {
+    height: 100vh;
+    bottom: 55px;
+  }
+
+  img.blackMap {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .contact__map img.marker {
+    right: 320px;
+    left: 320px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contacts__blockOne {
+    left: 140px;
+  }
+
+  .contact__map {
+    bottom: 0;
+  }
+
+  .contact__map img.marker {
+    right: 220px;
+    left: 220px;
+  }
+
+  .contacts__content h2 {
+    left: 140px;
+    font-size: 45px;
+  }
+
+  .contact__phone {
+    left: 140px;
+  }
+
+  .contact__mail {
+    left: 140px;
+  }
+
+  .contact__point {
+    left: 140px;
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__tvoContainers {
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+  }
+
+  .contacts__blockOne {
+    width: 100%;
+    height: 25vh;
+    top: 80px;
+    left: 140px;
+  }
+
+  .contact__map {
+    bottom: 50px;
+  }
+
+  .contact__point {
+    z-index: 11;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contacts__blockOne {
+    left: 30px;
+  }
+
+  .contacts__blockTwo {
+    width: 100%;
+    margin-top: 90px;
+  }
+
+  img.blackMap {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-footer__inner {
+    background: #252525;
+  }
+
+  .contact__point {
+    width: 75%;
+  }
+}

@@ -18,7 +18,14 @@ let aboutUsBtn = document.querySelector('.white__button.aboutUs'),
     hiddenOurProjectsP = document.querySelector('.main__ourProjects p'),
     hiddenSliderAboutUs = document.querySelector('.main__sliderAboutUs'),
     showTwoBlocks = document.querySelector('.main__show'),
-    toTopOurOffices = document.querySelector('.main__ourProjects');
+    mainOurProjects = document.querySelector('.main__ourProjects'),
+    mainTvoContainers = document.querySelector('.main__tvoContainers');
+
+/*ABOUT US Slider*/
+
+// let rightButton = document.getElementById('slider-right');
+// let leftButton =  document.getElementById('slider-left');
+// let line = document.getElementById('line');
 
 /*vacancies*/
 let  vacanciesContainer = document.querySelector('.content__v-slots');

@@ -16,8 +16,7 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
-    margin-left: 300px;
+    margin-left: 200px;
     justify-content: center;
 }
 
@@ -38,6 +37,7 @@
     font-size: 18px;
     font-family: "Bebas NeueNormal";
     line-height: 30px;
+    padding: 0 50px 0 0;
 }
 
 .main__ourProjects a {
@@ -47,50 +47,84 @@
 /* Slider */
 
 .main__sliderAboutUs {
-    width: 50%;
-    display: flex;
-    margin-top: 240px;
-    height: 320px;
+    width: 600px;
+    height: 268px;
+    margin: 250px auto;
+    overflow: hidden;
 }
 
-.main__img img {
-    max-width: 100%;
-    height: auto;
+#line {
+    width: 2940px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
 }
 
-button.slick-prev.slick-arrow {
+#line img {
+    float: left;
+    margin-right: 50px;
+}
+
+#line::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img#slider-right {
+    width: 40px;
+}
+
+img#slider-left {
+    width: 40px;
+}
+
+#slider-left {
+    margin-top: 20px;
     position: absolute;
-    bottom: 0;
 }
 
-button.slick-next.slick-arrow {
+#slider-right {
+    margin-top: 20px;
+    margin-left: 50px;
     position: absolute;
-    left: 70px;
-    bottom: 0;
 }
 
-.slick-list.draggable {
-    padding: 0 250px 0 0!important;
-}
+/* END Slider */
+
+/* Main-show */
 
 .main__show {
-    position: absolute;
-    right: 0;
-    transition: left .2s;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .main__show img {
     width: 100%;
-    max-width: 305px;
-    object-fit: cover;
     height: 100vh;
+    object-fit: fill;
 }
-.main__show img:first-child {
+.main__show img.imgOne {
     position: relative;
     bottom: 85px;
 }
 
-/* END Slider */
+.main__show-img {
+    position: relative;
+}
+
+.main__show-img img.btnVideo {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+}
+/* END  Main-show */
+
+
 /*hide script*/
 
 .hide{

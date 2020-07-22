@@ -1,30 +1,30 @@
-<!DOCTYPE html>
-<html lang = "ru">
-<head>
-   <title>Интех</title>
-   <meta charset = "UTF-8"/>
-   <link href = "css/COMMON.css" rel = "stylesheet"/>
-   <link href = "images/Group2446.svg" rel = "shortcut icon" type = "image/x-icon"/>
-   <link
-     href = "css/normalize.css-master/normalize.css"
-     rel = "stylesheet"
-     type = "text/css"
-   />
-   <link href = "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel = "stylesheet" type = "text/css"/>
-   <meta content = "width=device-width, initial-scale=1.0" name = "viewport"/>
-</head>
-<body>
-<header>
-   <div class = "header">
-      <div class = "header__logo">
-         <img alt = "logo" src = "images/Logo_white.svg"/>
-      </div>
-      <!--        <div class="header__item">-->
-      <!--          <div class="header__search">-->
-      <!--            <img alt="search" src="images/Search.svg" />-->
-      <!--          </div>-->
-      <div class = "header__search">
-         <div class = "header__search-container">
+
+  <!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Интех</title>
+    <meta charset="UTF-8" />
+    <link href="css/COMMON.css" rel="stylesheet" />
+    <link href="images/Group2446.svg" rel="shortcut icon" type="image/x-icon" />
+    <link
+      href="css/normalize.css-master/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header__logo">
+          <img alt="logo" src="images/Logo_white.svg" />
+        </div>
+<!--        <div class="header__item">-->
+<!--          <div class="header__search">-->
+<!--            <img alt="search" src="images/Search.svg" />-->
+<!--          </div>-->
+        <div class = "header__search">
+          <div class = "header__search-container">
             <input class = "header__search-input header__hidden" type = "text">
             <div class = "header__button-search">
                <img alt = "search" class = "header__search-img " src = "images/Search.svg"/>
@@ -119,16 +119,33 @@
                            </a>
                         </div>
 
-                        <div class = "main__sliderAboutUs" id = "main__sliderAboutUs">
-                           <div class = "main__img"><img alt = "" src = "images/jpg/MaskGroup.jpg"></div>
-                           <div class = "main__img"><img alt = "" src = "images/jpg/MaskGroup.jpg"></div>
-                        </div>
+                      <div id="main__sliderAboutUs" class="main__sliderAboutUs">
+                          <div id="line">
+                            <img src="images/jpg//MaskGroup.jpg" alt="" />
+                            <img src="images/jpg/MaskGroup.jpg" alt="" />
+                            <img src="images/jpg/MaskGroup.jpg" alt="" />
+                            <img src="images/jpg/MaskGroup.jpg" alt="" />
+                            <img src="images/jpg/MaskGroup.jpg" alt="" />
+                            <img src="images/jpg/MaskGroup.jpg" alt="" />
+                            <img src="images/jpg/MaskGroup.jpg" alt="" />
+                          </div>
+                          <div class="arrows">
+                            <img id="slider-left" src="images/arrows/arrow-left.svg" alt="">
+                            <img id="slider-right" src="images/arrows/arrow-right.svg" alt="">
+                          </div>
+                        <!-- <div class="main__img"><img src="images/jpg/MaskGroup.jpg" alt=""></div>
+                        <div class="main__img"><img src="images/jpg/MaskGroup.jpg" alt=""></div> -->
+                      </div>
 
-                        <div class = "main__show main__show-hide">
-                           <img alt = "" src = "images/png/foto2.png" width = "100">
-                           <img alt = "" src = "images/png/foto1.png" width = "100">
+                      <div class="main__show main__show-hide">
+                        <div class="main__show-img">
+                            <img class="imgOne" src="images/jpg/foto1.jpg" width="100" alt="">
                         </div>
-                     </div>
+                        <div class="main__show-img">
+                            <img class="btnVideo" src="images/btnVideo/play.svg" alt="">
+                            <img class="imgTwo" src="images/jpg/foto2.jpg" width="100" alt="">
+                        </div>
+                      </div>
                   </div>
                </div>
             </div>
@@ -168,9 +185,40 @@
                         <div class = "contacts-arrow__inside1"></div>
                         <div class = "contacts-arrow__inside2"></div>
                      </div>
+                     <div class="contacts-arrow__cubR"></div>
+                     <div class="contacts-arrow__inside1"></div>
+                     <div class="contacts-arrow__inside2"></div>
+                   </div>
+                 </div>
+                 <!-- <div class="contacts__content">
+                  <h2>Контакты</h2>
+                  <div class="contacts">
+                      <div class="contact__phone"><img src="images/Phone.svg" alt="phone">+7 985 646 15 36
+                      </div>
+                      <div class="contact__mail"><img src="images/Mail.svg" alt="mail">4898729@tut.by</div>
+                      <div class="contact__point"><img src="images/Point.svg" alt="point">м. университет, пр.
+                          партизанский,<br> д.3, офис 333
+                      </div>
                   </div>
-                  <div class = "main__content">
-                     <!--  main content here-->
+                  <div class="contact__map">
+                      <img src="images/Map1.svg" alt="map">
+                  </div>
+                 </div> -->
+                 <div class="contacts__content">
+                    <div class="contacts__tvoContainers">
+                      <div class="contacts__blockOne">
+                        <h2>Контакты</h2>
+                        <div class="contact__phone"><img src="images/Phone.svg" alt="phone">+7 985 646 15 36</div>
+                        <div class="contact__mail"><img src="images/Mail.svg" alt="mail">4898729@tut.by</div>
+                        <div class="contact__point"><img src="images/Point.svg" alt="point">м. университет, пр.партизанский, д.3, офис 333</div>
+                      </div>
+                      <div class="contacts__blockTwo">
+                        <div class="contact__map">
+                            <img class="marker" src="images/Subtract.svg" alt="">
+                            <img class="blackMap" src="images/Map1.svg" alt="map">
+                        </div>
+                      </div>
+                    </div>
                   </div>
                </div>
             </div>
@@ -197,6 +245,7 @@
          <div class = "nav-footer__item header__contactsM"><p>контакты</p></div>
       </div>
    </div>
+
 </footer>
 <script src = "js/scripts.js"></script>
 <script src = "js/scriptSlider.js"></script>
@@ -206,34 +255,6 @@
 <script src = "js/home.js"></script>
 <script src = "js/aboutUs.js"></script>
 <script src = "js/vacancies.js"></script>
-<script src = "//code.jquery.com/jquery-1.11.0.min.js" type = "text/javascript"></script>
-<script src = "//code.jquery.com/jquery-migrate-1.2.1.min.js" type = "text/javascript"></script>
-<script src = "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type = "text/javascript"></script>
-<script>
-    $('.main__sliderAboutUs').slick({
-        centerMode: true,
-        slidesToShow: 1,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
-</script>
+
 </body>
 </html>
