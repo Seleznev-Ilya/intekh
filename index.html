@@ -10,7 +10,6 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   </head>
   <body>
@@ -118,13 +117,31 @@
                     </div>
 
                       <div id="main__sliderAboutUs" class="main__sliderAboutUs">
-                        <div class="main__img"><img src="images/jpg/MaskGroup.jpg" alt=""></div>
-                        <div class="main__img"><img src="images/jpg/MaskGroup.jpg" alt=""></div>
+                          <div id="line">
+                            <img src="images/jpg//MaskGroup.jpg" alt="" />
+                            <img src="images/jpg/MaskGroup.jpg" alt="" />
+                            <img src="images/jpg/MaskGroup.jpg" alt="" />
+                            <img src="images/jpg/MaskGroup.jpg" alt="" />
+                            <img src="images/jpg/MaskGroup.jpg" alt="" />
+                            <img src="images/jpg/MaskGroup.jpg" alt="" />
+                            <img src="images/jpg/MaskGroup.jpg" alt="" />
+                          </div>
+                          <div class="arrows">
+                            <img id="slider-left" src="images/arrows/arrow-left.svg" alt="">
+                            <img id="slider-right" src="images/arrows/arrow-right.svg" alt="">
+                          </div>
+                        <!-- <div class="main__img"><img src="images/jpg/MaskGroup.jpg" alt=""></div>
+                        <div class="main__img"><img src="images/jpg/MaskGroup.jpg" alt=""></div> -->
                       </div>
 
                       <div class="main__show main__show-hide">
-                        <img src="images/png/foto2.png" width="100" alt="">
-                        <img src="images/png/foto1.png" width="100" alt="">
+                        <div class="main__show-img">
+                            <img class="imgOne" src="images/jpg/foto1.jpg" width="100" alt="">
+                        </div>
+                        <div class="main__show-img">
+                            <img class="btnVideo" src="images/btnVideo/play.svg" alt="">
+                            <img class="imgTwo" src="images/jpg/foto2.jpg" width="100" alt="">
+                        </div>
                       </div>
                   </div>
                 </div>
@@ -149,8 +166,8 @@
                      <div class="vacancies-arrow__inside2"></div>
                    </div>
                  </div>
-                 <div class="main__content">
-                  Hello World
+                 <div class="vacancies__content">
+                  В разработке!
                  </div>
                </div>
              </div>
@@ -173,8 +190,19 @@
                      <div class="contacts-arrow__inside2"></div>
                    </div>
                  </div>
-                 <div class="main__content">
-                   <!--  main content here-->
+                 <div class="contacts__content">
+                  <h2>Контакты</h2>
+                  <div class="contacts">
+                      <div class="contact__phone"><img src="images/Phone.svg" alt="phone">+7 985 646 15 36
+                      </div>
+                      <div class="contact__mail"><img src="images/Mail.svg" alt="mail">4898729@tut.by</div>
+                      <div class="contact__point"><img src="images/Point.svg" alt="point">м. университет, пр.
+                          партизанский,<br> д.3, офис 333
+                      </div>
+                  </div>
+                  <div class="contact__map">
+                      <img src="images/Map1.svg" alt="map">
+                  </div>
                  </div>
                </div>
              </div>
@@ -208,34 +236,5 @@
     <script src="js/nav.js"></script>
     <script src="js/home.js"></script>
     <script src="js/aboutUs.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>  
-    $('.main__sliderAboutUs').slick({
-        centerMode: true,
-        slidesToShow: 1,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1
-            }
-          }
-        ]
-    });    
-    </script>
   </body>
 </html>

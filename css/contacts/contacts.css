@@ -119,3 +119,230 @@
     height: 1px;
 }
 
+ .contacts__content h2 {
+    position: absolute;
+    left: 180px;
+    top: 170px;
+    font-size: 54px;
+    line-height: 100px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.contacts {
+    z-index: 1;
+    margin-right: 590px;
+}
+
+.contact__phone {
+    font-size: 18px;
+    left: 180px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.2);
+    z-index: 1;
+    margin-top: 270px;
+    position: absolute;
+}
+
+.contact__phone img {
+    z-index: 1;
+    margin-right: 20px;
+}
+
+.contact__mail {
+    font-size: 18px;
+    left: 180px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.2);
+    z-index: 1;
+    position: absolute;
+    margin-top: 300px;
+}
+
+.contact__mail img {
+    z-index: 1;
+    margin-right: 20px;
+}
+
+.contact__point {
+    font-size: 18px;
+    left: 180px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.2);
+    z-index: 1;
+    position: absolute;
+    margin-top: 330px;
+}
+
+.contact__point img {
+    z-index: 1;
+    margin-right: 20px;
+}
+
+.contact__map {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+}
+
+.contact__map img {
+    position: absolute;
+    width: 630px;
+    right: 0;
+}
+
+/*медиа запросы*/
+
+/* @media screen and (max-width: 1200px) {
+
+    .contact__map img {
+        right: 25px;
+        width: 670px;
+    }
+
+    .contact__phone {
+        z-index: 1;
+        left: 170px;
+        top: 310px;
+        position: absolute;
+        margin: 0;
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+    .contact__mail {
+        z-index: 1;
+        left: 170px;
+        top: 340px;
+        position: absolute;
+        margin: 0;
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+    .contact__point {
+        z-index: 1;
+        left: 170px;
+        top: 370px;
+        position: absolute;
+        margin: 0;
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    h2 {
+        position: absolute;
+        left: 190px;
+        top: 125px;
+        z-index: 1;
+    }
+
+    .contact__phone {
+        z-index: 1;
+        position: absolute;
+        left: 190px;
+        margin: 0;
+        top: 230px;
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+    .contact__mail {
+        z-index: 1;
+        position: absolute;
+        left: 190px;
+        margin: 0;
+        top: 270px;
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+    .contact__point {
+        z-index: 1;
+        position: absolute;
+        left: 190px;
+        margin: 0;
+        top: 310px;
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+    .contact__map img {
+        z-index: 1;
+        width: 460px;
+        position: absolute;
+        bottom: 150px;
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    h2 {
+        left: 140px;
+        font-size: 50px;
+    }
+
+    .contact__map img {
+        right: 0;
+        width: 390px;
+        top: 90px;
+    }
+
+    .contact__phone {
+        z-index: 1;
+        left: 140px;
+        top: 240px;
+        position: absolute;
+        margin: 0;
+        font-size: 15px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+    .contact__mail {
+        z-index: 1;
+        left: 140px;
+        top: 270px;
+        position: absolute;
+        margin: 0;
+        font-size: 15px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+.contact__point {
+        z-index: 1;
+        left: 140px;
+        top: 300px;
+        position: absolute;
+        margin: 0;
+        font-size: 15px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+} */

@@ -1,6 +1,163 @@
 @import "../COMMON.css";
 
-@media (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+  .main__ourProjects h1 {
+    font-size: 35px;
+  }
+
+  .main__ourProjects p {
+    font-size: 14px;
+  }
+
+  #line img {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__ourProjects {
+    margin-left: 130px;
+  }
+
+  .main__tvoContainers {
+    flex-direction: column;
+  }
+
+  .main__sliderAboutUs {
+    margin: 25px 130px;
+  }
+
+  .main__ourProjects {
+    margin-top: 60px;
+    width: auto;
+  }
+
+  #line img {
+    width: 300px;
+  }
+
+  .white__button.aboutUs {
+    margin-top: 0;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .main__tvoContainers {
+    flex-direction: column !important;
+  }
+
+  .main__show img.imgOne {
+    display: none;
+  }
+
+  .main__show {
+    justify-content: center;
+  }
+
+  .main__show img {
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  .white__button.aboutUs {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    display: none;
+  }
+
+  .footer__text {
+    display: none;
+  }
+
+  .footer__img {
+    display: none;
+  }
+
+  footer .nav-footer__Mobile {
+    display: block;
+  }
+
+  .main__ourProjects {
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+
+  .white__button.aboutUs {
+    margin-bottom: 0;
+  }
+
+  #line img {
+    width: 220px;
+  }
+
+  .main__sliderAboutUs {
+    margin: 15px 105px;
+  }
+
+  .main__ourProjects p {
+    font-size: 14px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main__show img {
+    height: 25vh;
+    object-fit: cover;
+  }
+
+  .main__show-img img.btnVideo {
+    bottom: 35px;
+  }
+
+  .main__ourProjects h1 {
+    font-size: 25px;
+  }
+
+  .main__ourProjects p {
+    line-height: 25px;
+  }
+
+  .main__sliderAboutUs {
+    margin: 15px 30px;
+  }
+
+  .main__show-img {
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main__ourProjects h1 {
+    font-size: 24px;
+  }
+
+  .header__logo {
+    margin-top: 15px;
+  }
+
+  .header__search {
+    top: 15px;
+  }
+
+  .white__button {
+    margin-top: 15px;
+  }
+
+  .main__ourProjects {
+    margin-top: 50px;
+  }
+}
+
+/* @media (max-width: 1300px) {
   .main__show img {
     max-width: 250px;
   }
@@ -301,4 +458,4 @@
       .white__button.aboutUs {
         display: none;
       }
-}
+} */
