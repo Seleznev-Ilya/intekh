@@ -4,6 +4,7 @@ headerHome.addEventListener("click", () => {
     stylingNavMenuActive(headerHomeM, 'nav-footer__Mobile');
     counter.count = 0;
     navFooterInner.style.transform = `translateX(${0}vw)`;
+    rotateArrow(false);
 });
 headerAboutUs.addEventListener("click", () => {
     sliderSwitcherPage(100);
@@ -11,6 +12,7 @@ headerAboutUs.addEventListener("click", () => {
     stylingNavMenuActive(headerAboutUsM, 'nav-footer__Mobile');
     counter.count = 1;
     navFooterInner.style.transform = `translateX(${0}vw)`;
+    rotateArrow(false);
 });
 headerVacancies.addEventListener("click", () => {
     sliderSwitcherPage(200);
@@ -18,6 +20,7 @@ headerVacancies.addEventListener("click", () => {
     stylingNavMenuActive(headerVacanciesM, 'nav-footer__Mobile');
     counter.count = 2;
     navFooterInner.style.transform = `translateX(-${15}vw)`;
+    rotateArrow(false);
 });
 headerContacts.addEventListener("click", () => {
     sliderSwitcherPage(300);
@@ -25,6 +28,7 @@ headerContacts.addEventListener("click", () => {
     stylingNavMenuActive(headerContactsM, 'nav-footer__Mobile');
     counter.count = 3;
     navFooterInner.style.transform = `translateX(-${15}vw)`;
+    rotateArrow(true);
 
 });
 

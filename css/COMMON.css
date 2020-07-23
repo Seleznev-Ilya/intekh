@@ -19,6 +19,7 @@
 @import "about us/about us.css";
 @import "about us/aboutUsBackground.css";
 @import "about us/aboutUsMedia.css";
+@import "about us/videimgSlider/videoimgSlider.css";
 /*OUR OFFICE*/
 
 /*VACANCIES*/
@@ -64,6 +65,7 @@
     text-decoration: none;
     color: inherit;
   }
+
   
   /*END Basic options*/
 .hr__footer{

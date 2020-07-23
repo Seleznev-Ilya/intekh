@@ -23,11 +23,30 @@ let aboutUsBtn = document.querySelector('.white__button.aboutUs'),
     mainOurProjects = document.querySelector('.main__ourProjects'),
     mainTvoContainers = document.querySelector('.main__tvoContainers');
 
-/*ABOUT US Slider*/
-
-// let rightButton = document.getElementById('slider-right');
-// let leftButton =  document.getElementById('slider-left');
-// let line = document.getElementById('line');
+/*ABOUT US img video Slider*/
+let aboutUsImgVideoLine = document.querySelector('.aboutUsImgVideo__line');
+let aboutUsGalleryObj = [
+    {
+        id: 1,
+        type: "video/mp4",
+        video: "video/video.mp4",
+        img: "images/jpg/foto1.jpg",
+    },
+    {
+        id: 2,
+        type: "video/mp4",
+        video: "video/video.mp4",
+        img: "images/jpg/foto2.jpg",
+    },
+    {
+        id: 3,
+        type: "video/mp4",
+        video: "video/video.mp4",
+        img: "images/jpg/foto1.jpg",
+    }
+];
+let  sliderImgVideoL = document.querySelector('.sliderImgVideoL');
+let  sliderImgVideoR = document.querySelector('.sliderImgVideoR');
 
 /*vacancies*/
 let  vacanciesContainer = document.querySelector('.content__v-slots');
@@ -356,4 +375,9 @@ let vacanciesObj = [
             ],
     },
 ];
+
+
+/*Footer*/
+let footerImg = document.querySelector('.footer__img');
+
 
