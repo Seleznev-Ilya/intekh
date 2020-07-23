@@ -9,7 +9,7 @@
 function imageVideoCreate(context) {
     for (let variableI = 0; variableI <= aboutUsGalleryObj.length; variableI++) {
         // console.log( aboutUsGalleryObj[i].id);
-        console.log( `${aboutUsGalleryObj[variableI].video}`);
+        console.log( aboutUsGalleryObj[variableI].video);
         let itemVI = document.createElement('div');
 
         let elementItem;
@@ -22,7 +22,7 @@ function imageVideoCreate(context) {
             elementItem.setAttribute('loop', ' ');
             elementItem.setAttribute('muted', 'muted');
                 sourceV = document.createElement('source');
-                sourceV.setAttribute('src',`${aboutUsGalleryObj[variableI].video}`);
+                sourceV.setAttribute('src', aboutUsGalleryObj[variableI].video);
                 sourceV.type = aboutUsGalleryObj[variableI].type;
                 elementItem.append(sourceV);
             itemVI.append(elementItem);
