@@ -22,7 +22,10 @@
 .footer__img {
     margin-right: 50px;
     cursor: pointer;
+    transform: rotate(0deg);
+    transition: .7s;
 }
+
 @media (max-width: 479px) {
     footer .footer {
         display: none;
