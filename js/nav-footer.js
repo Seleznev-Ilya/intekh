@@ -8,6 +8,7 @@ headerHomeM.addEventListener("click", () => {
     headerAboutUsM.style.borderTop = '1px solid transparent';
     headerVacanciesM.style.borderTop = '1px solid transparent';
     headerContactsM.style.borderTop = '1px solid transparent';
+    rotateArrow(false);
 });
 headerAboutUsM.addEventListener("click", () => {
     sliderSwitcherPage(100);
@@ -19,6 +20,7 @@ headerAboutUsM.addEventListener("click", () => {
     headerAboutUsM.style.borderTop = '1px solid #eeeeee6b';
     headerVacanciesM.style.borderTop = '1px solid transparent';
     headerContactsM.style.borderTop = '1px solid transparent';
+    rotateArrow(false);
 });
 headerVacanciesM.addEventListener("click", () => {
     sliderSwitcherPage(200);
@@ -30,6 +32,7 @@ headerVacanciesM.addEventListener("click", () => {
     headerAboutUsM.style.borderTop = '1px solid transparent';
     headerVacanciesM.style.borderTop = '1px solid #eeeeee6b';
     headerContactsM.style.borderTop = '1px solid transparent';
+    rotateArrow(false);
 });
 headerContactsM.addEventListener("click", () => {
     sliderSwitcherPage(300);
@@ -41,6 +44,7 @@ headerContactsM.addEventListener("click", () => {
     headerAboutUsM.style.borderTop = '1px solid transparent';
     headerVacanciesM.style.borderTop = '1px solid transparent';
     headerContactsM.style.borderTop = '1px solid #eeeeee6b';
+    rotateArrow(true);
 });
 arrowButtonNext.addEventListener("click", moveSliderPageByNumberFromCounterPages);
 // border-top: 1px solid #eeeeee6b;

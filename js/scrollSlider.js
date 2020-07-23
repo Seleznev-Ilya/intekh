@@ -34,24 +34,28 @@ function onWheel(e) {
                     stylingNavMenuActive(headerAboutUsM, 'nav-footer__Mobile');
                     stylingNavMenuActive(headerAboutUs, 'nav');
                     counter.count = 1;
+                    rotateArrow(false);
                     break;
                 case 2:
                     sliderSwitcherPage(200);
                     stylingNavMenuActive(headerVacanciesM, 'nav-footer__Mobile');
                     stylingNavMenuActive(headerVacancies, 'nav');
                     counter.count = 2;
+                    rotateArrow(false);
                     break;
                 case 3:
                     sliderSwitcherPage(300);
                     stylingNavMenuActive(headerContactsM, 'nav-footer__Mobile');
                     stylingNavMenuActive(headerContacts, 'nav');
                     counter.count = 3;
+                    rotateArrow(true);
                     break;
                 default:
                     sliderSwitcherPage(0);
                     stylingNavMenuActive(headerHomeM, 'nav-footer__Mobile');
                     stylingNavMenuActive(headerHome, 'nav');
                     counter.count = 0;
+                    rotateArrow(false);
             }
         }
     }

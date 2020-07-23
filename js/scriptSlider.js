@@ -67,22 +67,34 @@ function moveSliderPageByNumberFromCounterPages() {
             sliderSwitcherPage(100);
             stylingNavMenuActive(headerAboutUsM, 'nav-footer__Mobile');
             stylingNavMenuActive(headerAboutUs, 'nav');
+            rotateArrow(false);
             break;
         case 2:
             sliderSwitcherPage(200);
             stylingNavMenuActive(headerVacanciesM, 'nav-footer__Mobile');
             stylingNavMenuActive(headerVacancies, 'nav');
+            rotateArrow(false);
             break;
         case 3:
             sliderSwitcherPage(300);
             stylingNavMenuActive(headerContactsM, 'nav-footer__Mobile');
             stylingNavMenuActive(headerContacts, 'nav');
+            rotateArrow(true);
             break;
         default:
             sliderSwitcherPage(0);
             stylingNavMenuActive(headerHomeM, 'nav-footer__Mobile');
             stylingNavMenuActive(headerHome, 'nav');
+            rotateArrow(false);
     }
+}
+function rotateArrow(n) {
+    if (n){
+        footerImg.style.transform = `rotate(180deg)`;
+    } else {
+        footerImg.style.transform = `rotate(0deg)`;
+    }
+
 }
 
 
