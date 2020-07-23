@@ -119,23 +119,32 @@
   height: 1px;
 }
 
-.contacts__tvoContainers {
+.contacts__content-tvoContainers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  padding-left: 12%;
 }
 
 .contacts__blockOne {
-  width: 50%;
-  height: 100vh;
+  order: 1;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 200px;
-  left: 220px;
+  flex-wrap: wrap;
+  margin-top: 200px;
 }
 
 .contacts__blockTwo {
-  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  order: 2;
+  width: 70%;
   height: 100vh;
 }
 
@@ -144,9 +153,17 @@
   right: 420px;
   left: 420px;
   position: absolute;
+  z-index: 1;
+}
+
+img.blackMap {
+  position:absolute;z-index:0;top:0;left:0;
+width:100%;height:100%;
 }
 
 .contacts__content h2 {
+  font-family: "Arial";
+  font-weight: 900;
   font-size: 54px;
   line-height: 100px;
   letter-spacing: -0.5px;
@@ -204,5 +221,5 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  bottom: 180px;
+  bottom: 90px;
 }
