@@ -22,7 +22,7 @@ function imageVideoCreate(context) {
             elementItem.setAttribute('loop', ' ');
             elementItem.setAttribute('muted', 'muted');
                 sourceV = document.createElement('source');
-                sourceV.setAttribute('src', aboutUsGalleryObj[variableI].video);
+                sourceV.setAttribute('src',`${aboutUsGalleryObj[variableI].video}`);
                 sourceV.type = aboutUsGalleryObj[variableI].type;
                 elementItem.append(sourceV);
             itemVI.append(elementItem);
@@ -37,7 +37,7 @@ function imageVideoCreate(context) {
     }
 }
 
-imageVideoCreate(true);
+imageVideoCreate(false);
 let numberAbout = 0;
 sliderImgVideoL.addEventListener('click', ()=>{
     let number = numberAbout;
