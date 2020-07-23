@@ -12,6 +12,10 @@
       type="text/css"
     />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   </head>
   <body>
     <header>
@@ -42,9 +46,17 @@
    <nav>
       <div class = "nav">
          <ul>
-            <li class = "location">
+            <li class = "dropdown">
                <img alt = "map" src = "images/Map.svg"/>
-               Москва
+               <button onclick="myFunction()" class="dropbtn">Москва</button>
+               <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Уфа</a>
+                  <a href="#">Владимир</a>
+                  <a href="#">Краснодар</a>
+                  <a href="#">Краснодар</a>
+                  <a href="#">Пенза</a>
+                  <a href="#">Рыбинск</a>
+                </div>
             </li>
             <li class = "active header__home">Главная</li>
             <li class = "header__aboutUs">О нас</li>
@@ -121,13 +133,13 @@
 
                       <div id="main__sliderAboutUs" class="main__sliderAboutUs">
                           <div id="line">
-                            <img src="images/jpg//MaskGroup.jpg" alt="" />
-                            <img src="images/jpg/MaskGroup.jpg" alt="" />
-                            <img src="images/jpg/MaskGroup.jpg" alt="" />
-                            <img src="images/jpg/MaskGroup.jpg" alt="" />
-                            <img src="images/jpg/MaskGroup.jpg" alt="" />
-                            <img src="images/jpg/MaskGroup.jpg" alt="" />
-                            <img src="images/jpg/MaskGroup.jpg" alt="" />
+                            <a data-fancybox="gallery" href="images/jpg/MaskGroup.jpg"><img src="images/jpg/MaskGroup.jpg" alt="" /></a>
+                            <a data-fancybox="gallery" href="images/jpg/MaskGroup.jpg"><img src="images/jpg/MaskGroup.jpg" alt="" /></a>
+                            <a data-fancybox="gallery" href="images/jpg/MaskGroup.jpg"><img src="images/jpg/MaskGroup.jpg" alt="" /></a>
+                            <a data-fancybox="gallery" href="images/jpg/MaskGroup.jpg"><img src="images/jpg/MaskGroup.jpg" alt="" /></a>
+                            <a data-fancybox="gallery" href="images/jpg/MaskGroup.jpg"><img src="images/jpg/MaskGroup.jpg" alt="" /></a>
+                            <a data-fancybox="gallery" href="images/jpg/MaskGroup.jpg"><img src="images/jpg/MaskGroup.jpg" alt="" /></a>
+                            <a data-fancybox="gallery" href="images/jpg/MaskGroup.jpg"><img src="images/jpg/MaskGroup.jpg" alt="" /></a>
                           </div>
                           <div class="arrows">
                             <img id="slider-left" src="images/arrows/arrow-left.svg" alt="">
@@ -186,42 +198,25 @@
                         <div class = "contacts-arrow__inside1"></div>
                         <div class = "contacts-arrow__inside2"></div>
                      </div>
-                     <div class="contacts-arrow__cubR"></div>
-                     <div class="contacts-arrow__inside1"></div>
-                     <div class="contacts-arrow__inside2"></div>
                   </div>
-               </div>
-               <!-- <div class="contacts__content">
-                <h2>Контакты</h2>
-                <div class="contacts">
-                    <div class="contact__phone"><img src="images/Phone.svg" alt="phone">+7 985 646 15 36
-                    </div>
-                    <div class="contact__mail"><img src="images/Mail.svg" alt="mail">4898729@tut.by</div>
-                    <div class="contact__point"><img src="images/Point.svg" alt="point">м. университет, пр.
-                        партизанский,<br> д.3, офис 333
-                    </div>
-                </div>
-                <div class="contact__map">
-                    <img src="images/Map1.svg" alt="map">
-                </div>
-               </div> -->
-               <div class="contacts__content">
-                  <div class="contacts__tvoContainers">
-                     <div class="contacts__blockOne">
-                        <h2>Контакты</h2>
-                        <div class="contact__phone"><img src="images/Phone.svg" alt="phone">+7 985 646 15 36</div>
-                        <div class="contact__mail"><img src="images/Mail.svg" alt="mail">4898729@tut.by</div>
-                        <div class="contact__point"><img src="images/Point.svg" alt="point">м. университет, пр.партизанский, д.3, офис 333</div>
-                     </div>
-                     <div class="contacts__blockTwo">
-                        <div class="contact__map">
-                           <img class="marker" src="images/Subtract.svg" alt="">
-                           <img class="blackMap" src="images/Map1.svg" alt="map">
+                  <div class = "contacts__content">
+                     <div class="contacts__content-tvoContainers">
+                        <div class="contacts__blockOne">
+                           <h2>Контакты</h2>
+                           <div class="contact__phone"><img src="images/Phone.svg" alt="phone"><a href="tel:+79856461536">+7 985 646 15 36</a></div>
+                           <div class="contact__mail"><img src="images/Mail.svg" alt="mail"><a href="mailto:4898729@tut.by">4898729@tut.by</a></div>
+                           <div class="contact__point"><img src="images/Point.svg" alt="point">м. университет, пр.партизанский, д.3, офис 333</div>
+                        </div>
+                        <div class="contacts__blockTwo">
+                           <div class="contact__map">
+                              <img class="marker" src="images/Subtract.svg" alt="">
+                              <img class="blackMap" src="images/jpg/map.jpg" alt="map">
+                           </div>
                         </div>
                      </div>
                   </div>
-               </div>
             </div>
+         </div>
          </div>
       </div>
    </div>

@@ -2,8 +2,7 @@
 
 @media screen and (max-width: 1200px) {
   .contact__map {
-    height: 100vh;
-    bottom: 55px;
+    bottom: 95px;
   }
 
   img.blackMap {
@@ -15,15 +14,19 @@
     right: 320px;
     left: 320px;
   }
+
+  .contacts__blockOne {
+    width: 45%;
+  }
+
+  .contacts__content h2 {
+    font-size: 45px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .contacts__blockOne {
-    left: 140px;
-  }
-
-  .contact__map {
-    bottom: 0;
+    width: 55%;
   }
 
   .contact__map img.marker {
@@ -35,46 +38,50 @@
     left: 140px;
     font-size: 45px;
   }
-
-  .contact__phone {
-    left: 140px;
-  }
-
-  .contact__mail {
-    left: 140px;
-  }
-
-  .contact__point {
-    left: 140px;
-    width: 55%;
-  }
 }
 
 @media screen and (max-width: 768px) {
-  .contacts__tvoContainers {
+  .contacts__content-tvoContainers {
+    padding-left: 25%;
     flex-direction: column;
-    flex-wrap: wrap-reverse;
   }
 
   .contacts__blockOne {
     width: 100%;
-    height: 25vh;
-    top: 80px;
-    left: 140px;
+    margin-top: 70px;
   }
 
-  .contact__map {
-    bottom: 50px;
+  .contacts__blockTwo {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .contacts__content h2 {
+    font-size: 35px;
   }
 
   .contact__point {
     z-index: 11;
   }
+
+  .contact__map {
+    bottom: 0;
+  }
+
+  img.blackMap {
+    height: 58vh;
+  }
 }
 
 @media screen and (max-width: 480px) {
+
+  .contacts__content-tvoContainers {
+    padding-left: 0;
+  }
+
   .contacts__blockOne {
-    left: 30px;
+    margin-left: 5%;
+    margin-top: 100px;
   }
 
   .contacts__blockTwo {
@@ -83,15 +90,19 @@
   }
 
   img.blackMap {
-    width: 100%;
-    height: auto;
-  }
-
-  .nav-footer__inner {
-    background: #252525;
+    height: 50vh;
   }
 
   .contact__point {
     width: 75%;
+  }
+
+  .contact__map img.marker {
+    right: 120px;
+    left: 120px;
+  }
+
+  .contact__map {
+    bottom: 50px;
   }
 }

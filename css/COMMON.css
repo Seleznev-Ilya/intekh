@@ -107,3 +107,8 @@ footer{
     position: fixed;
 }
 
+.white__button:hover {
+  background-color: #fff;
+  transition: 0.5s;
+  color: #000;
+}
