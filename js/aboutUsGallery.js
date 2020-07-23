@@ -9,7 +9,7 @@
 function imageVideoCreate(context) {
     for (let variableI = 0; variableI <= aboutUsGalleryObj.length; variableI++) {
         // console.log( aboutUsGalleryObj[i].id);
-        console.log( aboutUsGalleryObj[variableI].video);
+        console.log( `${aboutUsGalleryObj[variableI].video}`);
         let itemVI = document.createElement('div');
 
         let elementItem;
