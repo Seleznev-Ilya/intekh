@@ -35,7 +35,7 @@ let aboutUsBtn = document.querySelector('.white__button.aboutUs'),
 
 /*ABOUT US img video Slider*/
 let aboutUsVideo = document.querySelector('.video0');
-let btnVideo = document.querySelector('.btnVideo');
+let btnVideo = document.querySelector('.imgTwo');
 let cross = document.querySelector('.cross');
 let containerImgVideo = document.querySelector('.containerImgVideo');
 let sliderImgVideoL = document.querySelector('.sliderImgVideoL');
