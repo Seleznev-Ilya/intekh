@@ -12,9 +12,18 @@ let headerHomeM = document.querySelector('.header__homeM'),
 let arrowButtonNext = document.querySelector('.footer__img'),
     navFooterInner = document.querySelector('.nav-footer__inner');
 
+let headerSearch = document.querySelector('.header__search');
+let headerSearchContainer = document.querySelector('.header__search-container');
+let headerSearchInput = document.querySelector('.header__search-input');
+let headerButtonSearch = document.querySelector('.header__button-search');
+let headerSearchImg = document.querySelector('.header__search-img');
+let headerSearchP = document.querySelector('.header__search-p');
+let headerSearchSuggest = document.querySelector('.header__search-suggest');
+
 /*ABOUT US*/
 
 let aboutUsBtn = document.querySelector('.white__button.aboutUs'),
+    whiteButton = document.querySelector('.white__button'),
     hiddenOurProjectsH1 = document.querySelector('.main__ourProjects h1'),
     hiddenOurProjectsH2 = document.querySelector('.main__ourProjects h2'),
     hiddenOurProjectsP = document.querySelector('.main__ourProjects p'),
@@ -24,7 +33,12 @@ let aboutUsBtn = document.querySelector('.white__button.aboutUs'),
     mainTvoContainers = document.querySelector('.main__tvoContainers');
 
 /*ABOUT US img video Slider*/
-let aboutUsImgVideoLine = document.querySelector('.aboutUsImgVideo__line');
+let aboutUsVideo = document.querySelector('.video0');
+let btnVideo = document.querySelector('.btnVideo');
+let cross = document.querySelector('.cross');
+let containerImgVideo = document.querySelector('.containerImgVideo');
+let sliderImgVideoL = document.querySelector('.sliderImgVideoL');
+let video = document.getElementById('video');
 let aboutUsGalleryObj = [
     {
         id: 1,
@@ -45,11 +59,9 @@ let aboutUsGalleryObj = [
         img: "images/jpg/foto1.jpg",
     }
 ];
-let  sliderImgVideoL = document.querySelector('.sliderImgVideoL');
-let  sliderImgVideoR = document.querySelector('.sliderImgVideoR');
 
 /*vacancies*/
-let  vacanciesContainer = document.querySelector('.content__v-slots');
+let vacanciesContainer = document.querySelector('.content__v-slots');
 // here will be ajax request
 let vacanciesObj = [
     {

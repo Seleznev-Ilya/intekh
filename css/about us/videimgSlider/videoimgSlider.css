@@ -1,101 +1,63 @@
 @import "../../COMMON.css";
 
 .containerImgVideo {
-    display: none;
     position: absolute;
     top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
+    left: 100vw;
     background-color: rgba(33, 33, 33, .75);
-    z-index: 1;
-    /*display: flex;*/
-    justify-content: center;
-}
-
-.aboutUsImgVideo {
-    margin-top: calc(50vh - 200px);
-    height: fit-content;
-    width: 60vw;
-    overflow: hidden;
-}
-
-.aboutUsImgVideo__line {
-    height: 100%;
+    z-index: 3;
     display: flex;
-    transform: translateX(0vw);
-    transition: 1.5s;
-}
-
-.aboutUsImgVideo__item {
-    height: fit-content;
-    width: auto;
+    justify-content: center;
+    transition: 1s;
 }
 
 video {
-    height: auto;
-    width: 60vw;
+    height: 100vh;
+    width: auto;
+    opacity: 1;
 }
-
-.ImgVideoButtonWrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 90vw;
+.sliderImgVideoL {
     position: absolute;
-    top: calc(50% - 20px);
-    height: 40px;
+    left: -60px;
+    bottom: 130px;
+    display: none;
+}
+.cross {
+    position: absolute;
+    top: 77px;
+    left: 40vw;
+    width: 45px;
+    height: 45px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    z-index: 1;
+    padding: 11px 0 0 15px;
 }
 
-@media (max-width: 990px) {
-    .aboutUsImgVideo {
-        margin-top: calc(50vh - 150px);
-        width: 75vw;
-    }
+/*@media (max-width: 990px) {*/
+/*}*/
 
-    .ImgVideoButtonWrapper {
-        width: 87vw;
-    }
-
-    video {
-        height: auto;
-        width: 75vw;
-    }
-}
-
-@media (max-width: 780px) {
-    .aboutUsImgVideo {
-        margin-top: calc(50vh - 125px);
-        width: 85vw;
-    }
-
-    .ImgVideoButtonWrapper {
-        width: 60vw;
-        top: calc(85% - 20px);
-    }
-
-    video {
-        height: auto;
-        width: 85vw;
-    }
-}
+/*@media (max-width: 780px) {*/
+/*}*/
 
 @media (max-width: 480px) {
-    .aboutUsImgVideo {
-        margin-top: calc(45vh - 120px);
-        width: 95vw;
+    .cross{
+        top: 218px;
+        left: 75vw;
     }
 
-    .ImgVideoButtonWrapper {
-        width: 50vw;
-        top: calc(85% - 20px);
+    .containerImgVideo {
+        top: 40vh;
+        left: 0;
+        padding: 5vw;
     }
-
     video {
         height: auto;
-        width: 95vw;
+        width: 90vw;
     }
-}
-
-.sliderImgVideoL, .sliderImgVideoR {
-    cursor: pointer;
+    .sliderImgVideoL{
+        display: block;
+        top: 218px;
+        left: 55vw;
+    }
 }

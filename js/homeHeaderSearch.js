@@ -1,10 +1,4 @@
-let headerSearch = document.querySelector('.header__search');
-let headerSearchContainer = document.querySelector('.header__search-container');
-let headerSearchInput = document.querySelector('.header__search-input');
-let headerButtonSearch = document.querySelector('.header__button-search');
-let headerSearchImg = document.querySelector('.header__search-img');
-let headerSearchP = document.querySelector('.header__search-p');
-let headerSearchSuggest = document.querySelector('.header__search-suggest');
+
 
 headerButtonSearch.addEventListener("click", () => {
     headerSearch.classList.toggle('header__active-headerSearch');

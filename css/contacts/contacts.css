@@ -124,6 +124,9 @@
   margin-top: 200px;
 }
 
+.contacts__blockOne {
+  margin-right: 35px;
+}
 .contacts__blockTwo {
   display: flex;
   flex-direction: row;

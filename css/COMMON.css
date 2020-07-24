@@ -86,7 +86,7 @@
         display: none;
     }
 }
-@media (max-width: 478px) {
+@media (max-width: 480px) {
     .hr__footer{
         display: none;
     }
