@@ -144,6 +144,9 @@ img#slider-left {
     bottom: 100px;
     left: 50px;
 }
+.imgTwo{
+    cursor: pointer;
+}
 /* END  Main-show */
 
 

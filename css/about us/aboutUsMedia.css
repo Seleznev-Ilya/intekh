@@ -9,6 +9,10 @@
     position: absolute;
     top: 55vh;
   }
+  .main__ourProjects p{
+    position: absolute;
+    top: 40vh;
+  }
   .main__ourProjects h2{
     position: absolute;
     top: 34vh;
