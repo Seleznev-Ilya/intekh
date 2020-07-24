@@ -72,6 +72,8 @@
 .header__search-p {
     color: white;
     font-size: 14px;
+    border: none;
+    background: transparent;
 
 }
 
@@ -113,6 +115,10 @@
     margin-top: 35px;
 }
 
+.header__logo img {
+    cursor: pointer;
+}
+
 /*.header__search {*/
 /*    position: absolute;*/
 /*    text-align: center;*/
@@ -143,6 +149,7 @@
     line-height: 45px;
     text-align: center;
     letter-spacing: 1.4px;
+    background: transparent;
 }
 
 
