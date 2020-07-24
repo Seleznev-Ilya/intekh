@@ -1,5 +1,6 @@
 /*all*/
 let sliderSwitcherG = document.querySelector('.document__inner');
+let headerLogo = document.querySelector('.header__logo');
 /*HOME*/
 let headerHome = document.querySelector('.header__home'),
     headerAboutUs = document.querySelector('.header__aboutUs'),

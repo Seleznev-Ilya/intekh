@@ -1,3 +1,11 @@
+headerLogo.addEventListener("click", () => {
+    sliderSwitcherPage(0);
+    stylingNavMenuActive(headerHome, 'nav');
+    stylingNavMenuActive(headerHomeM, 'nav-footer__Mobile');
+    counter.count = 0;
+    navFooterInner.style.transform = `translateX(${0}vw)`;
+    rotateArrow(false);
+});
 headerHome.addEventListener("click", () => {
     sliderSwitcherPage(0);
     stylingNavMenuActive(headerHome, 'nav');
