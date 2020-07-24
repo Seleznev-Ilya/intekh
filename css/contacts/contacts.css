@@ -1,6 +1,11 @@
 @import "../COMMON.css";
 
 /*BACKGROUND*/
+
+.contacts.document__item {
+  overflow: hidden;
+} 
+
 .contacts-container {
   width: 100%;
   height: 100%;
@@ -41,10 +46,10 @@
 }
 
 /*ARROW*/
-.home-arrow {
+.contacts-arrow {
   position: absolute;
   top: 0;
-  left: 25%;
+  left: 10%;
   height: 100vh;
   width: 1px;
   background-color: rgba(163, 170, 174, 0.2);
@@ -52,7 +57,7 @@
 }
 
 /*ARROW inside*/
-.home-arrow__inside {
+.contacts-arrow__inside {
   position: relative;
   top: 0;
   left: 0;
@@ -60,27 +65,7 @@
   width: 100vw;
 }
 
-.home-arrow__leg {
-  position: absolute;
-  /*top: 300px;*/
-  top: 37%;
-  left: 30%;
-  height: 1px;
-  width: 1px;
-}
-
-.home-arrow__leg1 {
-  position: relative;
-  transform: rotate(-45deg);
-}
-
-.home-arrow__leg2 {
-  background-color: rgba(163, 170, 174, 0.2);
-  height: 1px;
-  width: 39.5vw;
-}
-
-.home-arrow__cubL {
+.contacts-arrow__cubL {
   position: absolute;
   top: 0;
   left: 30%;
@@ -90,7 +75,7 @@
   width: 1px;
 }
 
-.home-arrow__cubR {
+.contacts-arrow__cubR {
   position: absolute;
   top: 0;
   left: 57.7%;
@@ -100,45 +85,54 @@
   width: 1px;
 }
 
-.home-arrow__inside1 {
+.contacts-arrow__inside1 {
   position: absolute;
   /*top: 300px;*/
-  top: 37%;
-  left: -25%;
+  top: 32%;
+  left: -71%;
   background-color: rgba(163, 170, 174, 0.2);
   width: 100vw;
   height: 1px;
 }
 
-.home-arrow__inside2 {
+.contacts-arrow__inside2 {
   position: absolute;
   top: 77%;
-  left: -25%;
+  left: 0;
   background-color: rgba(163, 170, 174, 0.2);
   width: 100vw;
   height: 1px;
 }
 
-.contacts__tvoContainers {
+.contacts__content-tvoContainers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  padding-left: 12%;
 }
 
 .contacts__blockOne {
-  width: 50%;
-  height: 100vh;
+  order: 1;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 200px;
-  left: 220px;
+  flex-wrap: wrap;
+  margin-top: 200px;
 }
 
 .contacts__blockOne {
   margin-right: 35px;
 }
 .contacts__blockTwo {
-  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  order: 2;
+  width: 70%;
   height: 100vh;
 }
 
@@ -147,9 +141,17 @@
   right: 420px;
   left: 420px;
   position: absolute;
+  z-index: 1;
+}
+
+img.blackMap {
+  position:absolute;z-index:0;top:0;left:0;
+width:100%;height:100%;
 }
 
 .contacts__content h2 {
+  font-family: "Arial";
+  font-weight: 900;
   font-size: 54px;
   line-height: 100px;
   letter-spacing: -0.5px;
@@ -207,5 +209,5 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  bottom: 180px;
+  bottom: 90px;
 }
