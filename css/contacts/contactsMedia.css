@@ -1,6 +1,11 @@
 /*медиа запросы*/
 
 @media screen and (max-width: 1200px) {
+
+  .contacts-arrow {
+    display: none;
+  }
+
   .contact__map {
     bottom: 95px;
   }
