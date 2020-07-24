@@ -22,10 +22,10 @@ function changeFirstBlock() {
 
 function hideSliderAboutUs() {
     hiddenSliderAboutUs.classList.toggle('hideOpacity');
-    hiddenSliderAboutUs.classList.toggle('hide');
+    // hiddenSliderAboutUs.classList.toggle('hide');
     // setTimeout(()=> hiddenSliderAboutUs.classList.toggle('hide'), 150);
     // showTwoBlocks.classList.toggle('main__show-hideOpacity');
-    setTimeout(()=> showTwoBlocks.classList.toggle('main__show-hideOpacity'), 50);
+    setTimeout(()=> {showTwoBlocks.classList.toggle('main__show-hideOpacity');}, 10);
     showTwoBlocks.classList.toggle('main__show-hide');
 }
 

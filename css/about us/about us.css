@@ -13,6 +13,7 @@
 }
 
 .main__ourProjects {
+    position: relative;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -26,6 +27,7 @@
     font-family: "Arial";
     font-weight: 800;
     font-size: 47px;
+    min-width: 305px;
 }
 
 .main__ourProjects h2 {
@@ -107,10 +109,11 @@ img#slider-left {
 }
 /*___________________________________________-*/
 .hideOpacity{
+    transform: translateX(100vw);
     opacity: 0;
 }
 .hide{
-    display: none!important;
+    display: none;
 }
 .main__show-hide{
     display: none;

@@ -1,6 +1,18 @@
 @import "../COMMON.css";
 
-@media screen and (max-width: 1200px) {
+@media (min-width: 980px) and (max-width: 1400px) {
+  .main__ourProjects h1 {
+    position: absolute;
+    top: 24vh;
+  }
+  .aboutUs .white__button{
+    position: absolute;
+    top: 55vh;
+  }
+  .main__ourProjects h2{
+    position: absolute;
+    top: 34vh;
+  }
 }
 
 @media screen and (max-width: 992px) {
