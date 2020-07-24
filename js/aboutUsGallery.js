@@ -5,51 +5,51 @@
 //   </div>
 // aboutUsImgVideoLine
 // aboutUsGalleryObj
-
-function imageVideoCreate(context) {
-    for (let variableI = 0; variableI <= aboutUsGalleryObj.length; variableI++) {
-        // console.log( aboutUsGalleryObj[i].id);
-        console.log( aboutUsGalleryObj[variableI].video);
-        let itemVI = document.createElement('div');
-
-        let elementItem;
-        let sourceV;
-        if (context) {
-            elementItem = document.createElement('video');
-            elementItem.classList.add(`video${variableI}`);
-            /*autoplay = "" class = "video0" loop = "" muted = "muted"*/
-            elementItem.setAttribute('controls', ' ');
-            elementItem.setAttribute('loop', ' ');
-            elementItem.setAttribute('muted', 'muted');
-                sourceV = document.createElement('source');
-                sourceV.setAttribute('src',`${aboutUsGalleryObj[variableI].video}`);
-                sourceV.type = aboutUsGalleryObj[variableI].type;
-                elementItem.append(sourceV);
-            itemVI.append(elementItem);
-        } else {
-            elementItem = document.createElement('img');
-            elementItem.setAttribute('src',`${ aboutUsGalleryObj[variableI].img}`);
-            itemVI.append(elementItem);
-        }
-
-        itemVI.classList.add('aboutUsImgVideo__item');
-        aboutUsImgVideoLine.append(itemVI);
+let width2 = screen.width;
+console.log(width2);
+containerImgVideo.style.left = "100vw";
+btnVideo.addEventListener('click', () => {
+    if (width2 > 480){
+        containerImgVideo.style.left = "50vw";
+        sliderImgVideoL.style.display = 'block';
+        headerSearch.style.display = 'none';
+        whiteButton.style.display = 'none';
+    } else {
+        containerImgVideo.style.left = "0vw";
     }
-}
 
-imageVideoCreate(true);
-let numberAbout = 0;
-sliderImgVideoL.addEventListener('click', ()=>{
-    let number = numberAbout;
-    number *= 60;
-    console.log( 'number');
-    aboutUsImgVideoLine.style.transform = `translateX(-${number}vw)`;
-    numberAbout++;
 });
-sliderImgVideoR.addEventListener('click', ()=>{
-    let number = numberAbout;
-    number *= 60;
-    console.log( 'number');
-    aboutUsImgVideoLine.style.transform = `translateX(-${number}vw)`;
-    numberAbout--;
+cross.addEventListener('click', () => {
+    if (width2 > 480) {
+        containerImgVideo.style.left = "100vw";
+        sliderImgVideoL.style.display = 'none';
+        headerSearch.style.display = 'block';
+        whiteButton.style.display = 'block';
+    } else {
+        containerImgVideo.style.left = "0vw";
+        sliderImgVideoL.style.display = 'block';
+    }
 });
+sliderImgVideoL.addEventListener('click', changeVideo);
+let numberOfVideo = 0;
+
+function changeVideo() {
+
+        aboutUsVideo.style.opacity = '.3';
+        aboutUsVideo.style.transition = '.5s';
+        setTimeout(()=>{
+            aboutUsVideo.style.opacity = '1';
+        },500);
+        for (let key in aboutUsGalleryObj) {
+            if (numberOfVideo === +key) {
+                video.setAttribute('src', `${aboutUsGalleryObj[+key].video}`);
+                console.log(aboutUsGalleryObj[+key].video);
+            }
+        }
+        numberOfVideo++;
+        if (numberOfVideo > aboutUsGalleryObj.length) {
+            numberOfVideo = 0;
+        }
+}
+changeVideo();
+

@@ -134,6 +134,9 @@
   left: 220px;
 }
 
+.contacts__blockOne {
+  margin-right: 35px;
+}
 .contacts__blockTwo {
   width: 50%;
   height: 100vh;

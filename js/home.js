@@ -5,7 +5,7 @@ window.onresize = function () {
     time = setTimeout(function () {
         if (documentWidth !== document.documentElement.clientWidth) {
             // h1Text();
-            // location.reload();
+            location.reload();
         }
     }, 123);
 };
